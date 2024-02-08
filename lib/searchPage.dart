@@ -32,7 +32,15 @@ class _SearchPageState extends State<SearchPage> {
               Text(
                 'Search for your favorite Movie',
                 style: TextStyle(fontSize: 19, fontWeight: FontWeight.w300),
-              )
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextField(
+                  decoration: InputDecoration(
+                filled: true,
+                fillColor: Color.fromARGB(255, 153, 174, 190),
+              ))
             ]),
       ),
     );
