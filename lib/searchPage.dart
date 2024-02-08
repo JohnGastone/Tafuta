@@ -19,13 +19,21 @@ class _SearchPageState extends State<SearchPage> {
         elevation: 0.4,
         // ignore: prefer_const_constructors
         title: Text(
-          "Search Page",
+          "Movie Arena",
           style: TextStyle(fontSize: 22),
         ),
       ),
       body: Padding(
         padding: EdgeInsets.all(15),
-        child: Column(mainAxisAlignment: MainAxisAlignment.start, children: []),
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                'Search for your favorite Movie',
+                style: TextStyle(fontSize: 19, fontWeight: FontWeight.w300),
+              )
+            ]),
       ),
     );
   }
