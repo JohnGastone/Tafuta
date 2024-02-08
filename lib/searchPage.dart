@@ -37,10 +37,15 @@ class _SearchPageState extends State<SearchPage> {
                 height: 20,
               ),
               TextField(
-                  decoration: InputDecoration(
-                filled: true,
-                fillColor: Color.fromARGB(255, 153, 174, 190),
-              ))
+                decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Color.fromARGB(255, 153, 174, 190),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                      borderSide: BorderSide.none,
+                    ),
+                    hint: "eg: Chausiku"),
+              )
             ]),
       ),
     );
