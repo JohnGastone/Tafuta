@@ -23,6 +23,10 @@ class _SearchPageState extends State<SearchPage> {
           style: TextStyle(fontSize: 22),
         ),
       ),
+      body: Padding(
+        padding: EdgeInsets.all(15),
+        child: Column(mainAxisAlignment: MainAxisAlignment.start, children: []),
+      ),
     );
   }
 }
