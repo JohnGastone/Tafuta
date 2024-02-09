@@ -37,16 +37,18 @@ class _SearchPageState extends State<SearchPage> {
                 height: 20,
               ),
               TextField(
-                decoration: InputDecoration(
-                    filled: true,
-                    fillColor: Color.fromARGB(255, 153, 174, 190),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8.0),
-                      borderSide: BorderSide.none,
-                    ),
-                    hintText: "Eg: Kijiji cha Tambua Haki",
-                    suffixIcon: Icon(Icons.search)),
-              )
+                  decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Color.fromARGB(255, 153, 174, 190),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        borderSide: BorderSide.none,
+                      ),
+                      hintText: "Eg: Kijiji cha Tambua Haki",
+                      suffixIcon: Icon(
+                        Icons.search,
+                      ),
+                      suffixIconColor: Colors.purple))
             ]),
       ),
     );
