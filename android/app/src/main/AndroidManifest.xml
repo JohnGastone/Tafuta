@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tafuta">
    <application
-        android:label="tafuta"
+        android:label="Tafuta"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/tafuta">
         <activity
             android:name=".MainActivity"
             android:exported="true"
