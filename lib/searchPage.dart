@@ -56,7 +56,14 @@ class _SearchPageState extends State<SearchPage> {
                       suffixIcon: Icon(
                         Icons.search,
                       ),
-                      suffixIconColor: Color.fromARGB(255, 46, 204, 209)))
+                      suffixIconColor: Color.fromARGB(255, 46, 204, 209))),
+              SizedBox(
+                height: 20,
+              ),
+              Expanded(
+                  child: ListView(
+                children: [],
+              ))
             ]),
       ),
     );
