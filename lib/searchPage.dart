@@ -11,6 +11,10 @@ class SearchPage extends StatefulWidget {
 }
 
 class _SearchPageState extends State<SearchPage> {
+  void updateList(String value) {
+    // We will filter our list of movies here
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
