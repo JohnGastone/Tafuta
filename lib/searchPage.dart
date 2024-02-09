@@ -37,6 +37,10 @@ class _SearchPageState extends State<SearchPage> {
                 height: 20,
               ),
               TextField(
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w300,
+                      color: Colors.black),
                   decoration: InputDecoration(
                       filled: true,
                       fillColor: Color.fromARGB(255, 153, 174, 190),
@@ -48,7 +52,7 @@ class _SearchPageState extends State<SearchPage> {
                       suffixIcon: Icon(
                         Icons.search,
                       ),
-                      suffixIconColor: Colors.purple))
+                      suffixIconColor: Color.fromARGB(255, 46, 204, 209)))
             ]),
       ),
     );
