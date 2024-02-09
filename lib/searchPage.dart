@@ -44,7 +44,8 @@ class _SearchPageState extends State<SearchPage> {
                       borderRadius: BorderRadius.circular(8.0),
                       borderSide: BorderSide.none,
                     ),
-                    hintText: "Eg: Kijiji cha Tambua Haki"),
+                    hintText: "Eg: Kijiji cha Tambua Haki",
+                    suffixIcon: Icon(Icons.search)),
               )
             ]),
       ),
