@@ -33,6 +33,12 @@ class _SearchPageState extends State<SearchPage> {
 
   void updateList(String value) {
     // We will filter our list of movies here
+    setState(() {
+      displayList = movieList
+          .where((element) =>
+              element.movieTitle!.toLowerCase().contains(value.toLowerCase()))
+          .toList();
+    });
   }
 
   List<MovieModel> displayList = List.from(movieList);
@@ -64,6 +70,7 @@ class _SearchPageState extends State<SearchPage> {
                   height: 20,
                 ),
                 TextField(
+                    onChanged: (value) => updateList(value),
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w300,
@@ -88,6 +95,12 @@ class _SearchPageState extends State<SearchPage> {
                         itemCount: displayList.length,
                         itemBuilder: ((context, index) => ListTile(
                               contentPadding: EdgeInsets.all(4),
+                              leading: Image.asset(
+                                displayList[index].posterImage!,
+                                width: 50,
+                                height: 50,
+                                fit: BoxFit.cover,
+                              ),
                               title: Text(
                                 displayList[index].movieTitle!,
                                 style: TextStyle(
@@ -102,12 +115,6 @@ class _SearchPageState extends State<SearchPage> {
                               ),
                               trailing: Text('${displayList[index].rating!}',
                                   style: TextStyle(color: Colors.amber)),
-                              leading: Image.asset(
-                                displayList[index].posterImage!,
-                                width: 50,
-                                height: 50,
-                                fit: BoxFit.cover,
-                              ),
                             ))))
               ])),
     );
