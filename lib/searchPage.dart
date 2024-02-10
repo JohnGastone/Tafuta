@@ -13,22 +13,22 @@ class SearchPage extends StatefulWidget {
 
 class _SearchPageState extends State<SearchPage> {
   static List<MovieModel> movieList = [
-    MovieModel('Panguso', 2020, 'images/Tafuta.png'),
-    MovieModel('Chausiku', 2013, 'images/Tafuta.png'),
-    MovieModel('Gusa Unase', 2021, 'images/Tafuta.png'),
-    MovieModel('Mwana Ukome', 217, 'images/Tafuta.png'),
-    MovieModel('Mama Kimbo', 2020, 'images/Tafuta.png'),
-    MovieModel('Kuku Mgeni', 2023, 'images/Tafuta.png'),
-    MovieModel('Paka Shume', 2020, 'images/Tafuta.png'),
-    MovieModel('Ukiinama Ntiti ukiinuka Ntiti', 2021, 'images/Tafuta.png'),
-    MovieModel('Mama Kilakshal', 2020, 'images/Tafuta.png'),
-    MovieModel('Mama Mbelemende', 2013, 'images/Tafuta.png'),
-    MovieModel('Kijiwe Samli', 2024, 'images/Tafuta.png'),
-    MovieModel('Kijiji cha Tambua Haki', 2020, 'images/Tafuta.png'),
-    MovieModel('Anko JJ', 2021, 'images/Tafuta.png'),
-    MovieModel('Harakati za pimbi', 2020, 'images/Tafuta.png'),
-    MovieModel('Shumileta', 2013, 'images/Tafuta.png'),
-    MovieModel('Jini Kabula', 2024, 'images/Tafuta.png'),
+    MovieModel('Panguso', 2020, 4.0, 'images/Tafuta.png'),
+    MovieModel('Chausiku', 2013, 4.6, 'images/Tafuta.png'),
+    MovieModel('Gusa Unase', 2021, 4.9, 'images/Tafuta.png'),
+    MovieModel('Mwana Ukome', 217, 4.6, 'images/Tafuta.png'),
+    MovieModel('Mama Kimbo', 2020, 4.5, 'images/Tafuta.png'),
+    MovieModel('Kuku Mgeni', 2023, 5.0, 'images/Tafuta.png'),
+    MovieModel('Paka Shume', 2020, 4.3, 'images/Tafuta.png'),
+    MovieModel('Ukiinama Ntiti ukiinuka Ntiti', 2021, 4.0, 'images/Tafuta.png'),
+    MovieModel('Mama Kilakshal', 2020, 3.8, 'images/Tafuta.png'),
+    MovieModel('Mama Mbelemende', 2013, 4.9, 'images/Tafuta.png'),
+    MovieModel('Kijiwe Samli', 2024, 5.0, 'images/Tafuta.png'),
+    MovieModel('Kijiji cha Tambua Haki', 2020, 4.8, 'images/Tafuta.png'),
+    MovieModel('Anko JJ', 2021, 4.5, 'images/Tafuta.png'),
+    MovieModel('Harakati za pimbi', 2020, 4.4, 'images/Tafuta.png'),
+    MovieModel('Shumileta', 2013, 4.5, 'images/Tafuta.png'),
+    MovieModel('Jini Kabula', 2024, 4.1, 'images/Tafuta.png'),
   ];
 
   void updateList(String value) {
@@ -100,6 +100,10 @@ class _SearchPageState extends State<SearchPage> {
                                     fontSize: 15,
                                     color: Color.fromARGB(255, 92, 165, 202)),
                               ),
+                              trailing: Text('${displayList[index].rating!}',
+                                  style: TextStyle(
+                                      color:
+                                          Color.fromARGB(255, 231, 245, 34))),
                             ))))
               ])),
     );
