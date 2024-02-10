@@ -30,6 +30,8 @@ class _SearchPageState extends State<SearchPage> {
     // We will filter our list of movies here
   }
 
+  List<MovieModel> displayList = List.from(movieList);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,44 +46,48 @@ class _SearchPageState extends State<SearchPage> {
         ),
       ),
       body: Padding(
-        padding: EdgeInsets.all(15),
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text(
-                'Search for your favorite Movie',
-                style: TextStyle(fontSize: 19, fontWeight: FontWeight.w300),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              TextField(
-                  style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w300,
-                      color: Colors.black),
-                  decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Color.fromARGB(255, 153, 174, 190),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(8.0),
-                        borderSide: BorderSide.none,
-                      ),
-                      hintText: "Eg: Kijiji cha Tambua Haki",
-                      suffixIcon: Icon(
-                        Icons.search,
-                      ),
-                      suffixIconColor: Color.fromARGB(255, 46, 204, 209))),
-              SizedBox(
-                height: 20,
-              ),
-              Expanded(
-                  child: ListView(
-                children: [],
-              ))
-            ]),
-      ),
+          padding: EdgeInsets.all(15),
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  'Search for your favorite Movie',
+                  style: TextStyle(fontSize: 19, fontWeight: FontWeight.w300),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                TextField(
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w300,
+                        color: Colors.black),
+                    decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Color.fromARGB(255, 153, 174, 190),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8.0),
+                          borderSide: BorderSide.none,
+                        ),
+                        hintText: "Eg: Kijiji cha Tambua Haki",
+                        suffixIcon: Icon(
+                          Icons.search,
+                        ),
+                        suffixIconColor: Color.fromARGB(255, 46, 204, 209))),
+                SizedBox(
+                  height: 20,
+                ),
+                Expanded(
+                    child: ListView.builder(
+                        itemCount: displayList.length,
+                        itemBuilder: ((context, index) => ListTile(
+                                title: Text(
+                              displayList[index].movieTitle!,
+                              style: TextStyle(
+                                  fontSize: 20, color: Colors.blueGrey),
+                            )))))
+              ])),
     );
   }
 }
