@@ -21,7 +21,7 @@ class _SearchPageState extends State<SearchPage> {
     MovieModel('Kuku Mgeni', 2023, 5.0, 'images/Tafuta.png'),
     MovieModel('Paka Shume', 2020, 4.3, 'images/Tafuta.png'),
     MovieModel('Ukiinama Ntiti ukiinuka Ntiti', 2021, 4.0, 'images/Tafuta.png'),
-    MovieModel('Mama Kilakshal', 2020, 3.8, 'images/Tafuta.png'),
+    MovieModel('Mama Kilakshal', 2020, 4.8, 'images/Tafuta.png'),
     MovieModel('Mama Mbelemende', 2013, 4.9, 'images/Tafuta.png'),
     MovieModel('Kijiwe Samli', 2024, 5.0, 'images/Tafuta.png'),
     MovieModel('Kijiji cha Tambua Haki', 2020, 4.8, 'images/Tafuta.png'),
@@ -40,7 +40,7 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 206, 200, 200),
+      backgroundColor: Color.fromARGB(255, 35, 47, 66),
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
         elevation: 0.4,
@@ -92,7 +92,7 @@ class _SearchPageState extends State<SearchPage> {
                                 displayList[index].movieTitle!,
                                 style: TextStyle(
                                     fontSize: 20,
-                                    color: Color.fromARGB(255, 33, 46, 53)),
+                                    color: Color.fromARGB(255, 195, 205, 211)),
                               ),
                               subtitle: Text(
                                 '${displayList[index].releaseYear!}',
@@ -101,9 +101,10 @@ class _SearchPageState extends State<SearchPage> {
                                     color: Color.fromARGB(255, 92, 165, 202)),
                               ),
                               trailing: Text('${displayList[index].rating!}',
-                                  style: TextStyle(
-                                      color:
-                                          Color.fromARGB(255, 231, 245, 34))),
+                                  style: TextStyle(color: Colors.amber)),
+                              // leading: Image.asset(
+                              //   displayList[index].posterImage!,
+                              // ),
                             ))))
               ])),
     );
