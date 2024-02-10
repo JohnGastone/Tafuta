@@ -102,9 +102,12 @@ class _SearchPageState extends State<SearchPage> {
                               ),
                               trailing: Text('${displayList[index].rating!}',
                                   style: TextStyle(color: Colors.amber)),
-                              // leading: Image.asset(
-                              //   displayList[index].posterImage!,
-                              // ),
+                              leading: Image.asset(
+                                displayList[index].posterImage!,
+                                width: 50,
+                                height: 50,
+                                fit: BoxFit.cover,
+                              ),
                             ))))
               ])),
     );
