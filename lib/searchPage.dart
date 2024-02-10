@@ -16,7 +16,7 @@ class _SearchPageState extends State<SearchPage> {
     MovieModel('Panguso', 2020, 4.0, 'images/panguso.jpeg'),
     MovieModel('Chausiku', 2013, 4.6, 'images/chausiku.jpeg'),
     MovieModel('Gusa Unase', 2021, 4.9, 'images/Tafuta.png'),
-    MovieModel('Mwana Ukome', 217, 4.6, 'images/Tafuta.png'),
+    MovieModel('Mwana Ukome', 2017, 4.6, 'images/Tafuta.png'),
     MovieModel('Mama Kimbo', 2020, 4.5, 'images/kimbo.jpeg'),
     MovieModel('Kuku Mgeni', 2023, 5.0, 'images/Tafuta.png'),
     MovieModel('Paka Shume', 2020, 4.3, 'images/Tafuta.png'),
