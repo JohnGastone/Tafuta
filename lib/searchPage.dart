@@ -24,6 +24,11 @@ class _SearchPageState extends State<SearchPage> {
     MovieModel('Mama Kilakshal', 2020, 'images/Tafuta.png'),
     MovieModel('Mama Mbelemende', 2013, 'images/Tafuta.png'),
     MovieModel('Kijiwe Samli', 2024, 'images/Tafuta.png'),
+    MovieModel('Kijiji cha Tambua Haki', 2020, 'images/Tafuta.png'),
+    MovieModel('Anko JJ', 2021, 'images/Tafuta.png'),
+    MovieModel('Harakati za pimbi', 2020, 'images/Tafuta.png'),
+    MovieModel('Shumileta', 2013, 'images/Tafuta.png'),
+    MovieModel('Jini Kabula', 2024, 'images/Tafuta.png'),
   ];
 
   void updateList(String value) {
@@ -82,11 +87,18 @@ class _SearchPageState extends State<SearchPage> {
                     child: ListView.builder(
                         itemCount: displayList.length,
                         itemBuilder: ((context, index) => ListTile(
-                                title: Text(
-                              displayList[index].movieTitle!,
-                              style: TextStyle(
-                                  fontSize: 20, color: Colors.blueGrey),
-                            )))))
+                              title: Text(
+                                displayList[index].movieTitle!,
+                                style: TextStyle(
+                                    fontSize: 20, color: Colors.blueGrey),
+                              ),
+                              subtitle: Text(
+                                '${displayList[index].releaseYear!}',
+                                style: TextStyle(
+                                    fontSize: 15,
+                                    color: Color.fromARGB(255, 92, 165, 202)),
+                              ),
+                            ))))
               ])),
     );
   }
