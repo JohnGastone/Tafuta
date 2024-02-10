@@ -87,10 +87,12 @@ class _SearchPageState extends State<SearchPage> {
                     child: ListView.builder(
                         itemCount: displayList.length,
                         itemBuilder: ((context, index) => ListTile(
+                              contentPadding: EdgeInsets.all(4),
                               title: Text(
                                 displayList[index].movieTitle!,
                                 style: TextStyle(
-                                    fontSize: 20, color: Colors.blueGrey),
+                                    fontSize: 20,
+                                    color: Color.fromARGB(255, 33, 46, 53)),
                               ),
                               subtitle: Text(
                                 '${displayList[index].releaseYear!}',
