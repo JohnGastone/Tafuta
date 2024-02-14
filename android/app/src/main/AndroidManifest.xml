@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tafuta">
    <application
-        android:label="Tafuta"
+        android:label="Shimoni"
         android:name="${applicationName}"
         android:icon="@mipmap/tafuta">
         <activity

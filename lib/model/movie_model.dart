@@ -3,5 +3,7 @@ class MovieModel {
   int? releaseYear;
   double? rating;
   String? posterImage;
-  MovieModel(this.movieTitle, this.releaseYear, this.rating, this.posterImage);
+  String? description;
+  MovieModel(this.movieTitle, this.releaseYear, this.rating, this.posterImage,
+      this.description);
 }

@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+// import 'package:tafuta/movie.dart';
 import 'package:tafuta/searchPage.dart';
 
 void main() {
