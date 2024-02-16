@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:tafuta/model/movie_model.dart';
+import 'package:gradient_coloured_buttons/gradient_coloured_buttons.dart';
 
 class ItemPage extends StatelessWidget {
   List<Color> clrs = [
@@ -29,18 +30,33 @@ class ItemPage extends StatelessWidget {
             width: 100,
             height: 40,
             child: DecoratedBox(
-                position: DecorationPosition.background,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 217, 222, 224),
-                  shape: BoxShape.circle,
-                  // border: BoxBorder()
-                ),
-                child: IconButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                  icon: Icon(Icons.arrow_back),
-                )),
+              position: DecorationPosition.background,
+              decoration: BoxDecoration(
+                color: Color.fromARGB(255, 217, 222, 224),
+                shape: BoxShape.circle,
+                // border: BoxBorder()
+              ),
+              child: GradientButton(
+                text: "Rudi shimoni",
+                textStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                gradientColors: [Colors.black, Colors.brown],
+                width: 80,
+                height: 50,
+                borderRadius: 30.0,
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+              // child: IconButton(
+              //   onPressed: () {
+              //     Navigator.of(context).pop();
+              //   },
+              //   icon: Icon(Icons.arrow_back),
+              // )
+            ),
+          ),
+          SizedBox(
+            height: 15,
           ),
           Padding(
             padding: EdgeInsets.zero,
