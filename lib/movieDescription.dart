@@ -26,35 +26,24 @@ class ItemPage extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          SizedBox(
-            width: 100,
-            height: 40,
-            child: DecoratedBox(
-              position: DecorationPosition.background,
-              decoration: BoxDecoration(
-                color: Color.fromARGB(255, 217, 222, 224),
-                shape: BoxShape.circle,
-                // border: BoxBorder()
-              ),
-              child: GradientButton(
-                text: "Rudi shimoni",
-                textStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-                gradientColors: [Colors.black, Colors.brown],
-                width: 80,
-                height: 50,
-                borderRadius: 30.0,
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-              ),
-              // child: IconButton(
-              //   onPressed: () {
-              //     Navigator.of(context).pop();
-              //   },
-              //   icon: Icon(Icons.arrow_back),
-              // )
-            ),
+          GradientButton(
+            text: "Rudi shimoni",
+            textStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            gradientColors: [Colors.black, Colors.brown],
+            width: 60,
+            height: 50,
+            //borderRadius: 30.0,
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
           ),
+          // child: IconButton(
+          //   onPressed: () {
+          //     Navigator.of(context).pop();
+          //   },
+          //   icon: Icon(Icons.arrow_back),
+          // )
+
           SizedBox(
             height: 15,
           ),
