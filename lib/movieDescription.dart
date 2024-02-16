@@ -29,14 +29,14 @@ class ItemPage extends StatelessWidget {
           GradientButton(
             text: "Rudi shimoni",
             textStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-            gradientColors: [Colors.black, Colors.brown],
-            width: 60,
+            gradientColors: [Colors.blue, Colors.brown],
             height: 50,
             //borderRadius: 30.0,
             onPressed: () {
               Navigator.of(context).pop();
             },
           ),
+
           // child: IconButton(
           //   onPressed: () {
           //     Navigator.of(context).pop();
@@ -237,7 +237,10 @@ class ItemPage extends StatelessWidget {
           ),
           Center(
             child: Text("Share To a Friend",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w300)),
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w300,
+                    color: Colors.black)),
           ),
           SizedBox(
             height: 6,
