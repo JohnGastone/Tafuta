@@ -46,9 +46,9 @@ class ItemPage extends StatelessWidget {
           //   icon: Icon(Icons.arrow_back),
           // )
 
-          // SizedBox(
-          //   height: 15,
-          // ),
+          SizedBox(
+            height: 15,
+          ),
           Padding(
             padding: EdgeInsets.zero,
             child: Image.asset(
