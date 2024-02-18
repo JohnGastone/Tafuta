@@ -254,52 +254,20 @@ class ItemPage extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              InkWell(
-                // onTap: () async {
-                //   const url =
-                //       'https://www.facebook.com/sharer/sharer.php?u=<URL_TO_SHARE>';
-                //   if (await canLaunchUrl(url)) {
-                //     await launchUrl(url);
-                //   } else {
-                //     throw 'Could not launch $url';
-                //   }
-                // },
-                child: Icon(
-                  Icons.facebook,
-                  color: Colors.blue,
-                  size: 40,
-                ),
+              FlutterSocialButton(
+                onTap: () {},
+                buttonType: ButtonType.whatsapp,
+                mini: true,
               ),
-              InkWell(
-                // onTap: () async {
-                //   const url =
-                //       'https://telegram.me/share/url?url=<URL_TO_SHARE>&text=<TEXT_TO_SHARE>';
-                //   if (await canLaunchUrl(url)) {
-                //     await launchUrl(url);
-                //   } else {
-                //     throw 'Could not launch $url';
-                //   }
-                // },
-                child: Icon(
-                  Icons.telegram,
-                  color: Color.fromARGB(255, 163, 113, 192),
-                  size: 40,
-                ),
+              FlutterSocialButton(
+                onTap: () {},
+                buttonType: ButtonType.twitter,
+                mini: true,
               ),
-              InkWell(
-                // onTap: () async {
-                //   const url = 'whatsapp://send?text=<TEXT_TO_SHARE>';
-                //   if (await canLaunchUrl(url)) {
-                //     await launchUrl(url);
-                //   } else {
-                //     throw 'Could not launch $url';
-                //   }
-                // },
-                child: Icon(
-                  Icons.whatsapp,
-                  color: Colors.green,
-                  size: 40,
-                ),
+              FlutterSocialButton(
+                onTap: () {},
+                buttonType: ButtonType.facebook,
+                mini: true,
               ),
             ],
           )
