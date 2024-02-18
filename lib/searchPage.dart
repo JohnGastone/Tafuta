@@ -1,8 +1,9 @@
-// ignore_for_file: prefer_const_constructors, prefer_is_empty, duplicate_ignore
+// ignore_for_file: prefer_const_constructors, prefer_is_empty, duplicate_ignore, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:tafuta/movieDescription.dart';
 import 'package:tafuta/model/movie_model.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
@@ -27,7 +28,7 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 35, 47, 66),
+      backgroundColor: Color.fromARGB(255, 75, 84, 99),
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
         elevation: 0.4,
@@ -72,8 +73,33 @@ class _SearchPageState extends State<SearchPage> {
                         ),
                         suffixIconColor: Color.fromARGB(255, 46, 204, 209))),
                 SizedBox(
-                  height: 20,
+                  height: 15,
                 ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 1),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Movie Name',
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w200),
+                      ),
+                      Text(
+                        'Rating',
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w200),
+                      )
+                    ],
+                  ),
+                ),
+                // SizedBox(
+                //   height: 10,
+                // ),
                 Expanded(
                     child: displayList.length == 0
                         ? Center(
