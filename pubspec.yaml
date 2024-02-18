@@ -40,6 +40,7 @@ dependencies:
   gradient_coloured_buttons: ^0.1.0
   google_fonts: ^4.0.4
   flutter_social_button: ^1.1.4+1
+  flutter_animated_button: ^2.0.3
 
 
 dev_dependencies:
