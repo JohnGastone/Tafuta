@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:tafuta/model/movie_model.dart';
 import 'package:gradient_coloured_buttons/gradient_coloured_buttons.dart';
 import 'package:flutter_social_button/flutter_social_button.dart';
+import 'package:flutter_animated_button/flutter_animated_button.dart';
 
 class ItemPage extends StatelessWidget {
   List<Color> clrs = [
@@ -28,14 +29,17 @@ class ItemPage extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          GradientButton(
-            text: "Rudi shimoni",
-            textStyle: GoogleFonts.spaceMono(
-                fontWeight: FontWeight.bold, fontSize: 15),
-            gradientColors: [Colors.blue, Colors.brown],
-            // height: 50,
-            //borderRadius: 30.0,
-            onPressed: () {
+          AnimatedButton(
+            width: 200,
+            text: 'SUBMIT',
+            selectedTextColor: Colors.black,
+            transitionType: TransitionType.BOTTOM_TO_TOP,
+            textStyle: TextStyle(
+                fontSize: 28,
+                letterSpacing: 5,
+                color: Colors.deepOrange,
+                fontWeight: FontWeight.w300),
+            onPress: () {
               Navigator.of(context).pop();
             },
           ),
