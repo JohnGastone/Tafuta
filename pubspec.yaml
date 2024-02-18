@@ -39,6 +39,7 @@ dependencies:
   url_launcher: ^6.0.0
   gradient_coloured_buttons: ^0.1.0
   google_fonts: ^4.0.4
+  flutter_social_button: ^1.1.4+1
 
 
 dev_dependencies:

@@ -5,6 +5,7 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tafuta/model/movie_model.dart';
 import 'package:gradient_coloured_buttons/gradient_coloured_buttons.dart';
+import 'package:flutter_social_button/flutter_social_button.dart';
 
 class ItemPage extends StatelessWidget {
   List<Color> clrs = [
