@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:tafuta/model/movie_model.dart';
 import 'package:gradient_coloured_buttons/gradient_coloured_buttons.dart';
 
@@ -28,7 +29,8 @@ class ItemPage extends StatelessWidget {
           ),
           GradientButton(
             text: "Rudi shimoni",
-            textStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            textStyle:
+                GoogleFonts.karla(fontWeight: FontWeight.bold, fontSize: 15),
             gradientColors: [Colors.blue, Colors.brown],
             height: 50,
             //borderRadius: 30.0,
@@ -67,7 +69,7 @@ class ItemPage extends StatelessWidget {
                       child: Row(
                         children: [
                           Text('${movie.movieTitle}',
-                              style: TextStyle(
+                              style: GoogleFonts.karla(
                                   fontSize: 25,
                                   fontWeight: FontWeight.w800,
                                   color: Colors.blueGrey)),
@@ -146,7 +148,7 @@ class ItemPage extends StatelessWidget {
                     child: Text(
                       '${movie.description}',
                       textAlign: TextAlign.justify,
-                      style: TextStyle(
+                      style: GoogleFonts.karla(
                         fontSize: 17,
                         fontWeight: FontWeight.w300,
                         color: Colors.blueGrey,
