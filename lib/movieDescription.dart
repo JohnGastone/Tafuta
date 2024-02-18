@@ -32,7 +32,7 @@ class ItemPage extends StatelessWidget {
             textStyle:
                 GoogleFonts.karla(fontWeight: FontWeight.bold, fontSize: 15),
             gradientColors: [Colors.blue, Colors.brown],
-            height: 50,
+            // height: 50,
             //borderRadius: 30.0,
             onPressed: () {
               Navigator.of(context).pop();
@@ -46,14 +46,14 @@ class ItemPage extends StatelessWidget {
           //   icon: Icon(Icons.arrow_back),
           // )
 
-          SizedBox(
-            height: 15,
-          ),
+          // SizedBox(
+          //   height: 15,
+          // ),
           Padding(
             padding: EdgeInsets.zero,
             child: Image.asset(
               '${movie.posterImage}',
-              height: 250,
+              height: 210,
               width: 250,
             ),
           ),
@@ -116,7 +116,7 @@ class ItemPage extends StatelessWidget {
                                 margin: EdgeInsets.symmetric(horizontal: 10),
                                 child: Text(
                                   '01',
-                                  style: TextStyle(
+                                  style: GoogleFonts.karla(
                                       fontSize: 13,
                                       fontWeight: FontWeight.w600,
                                       color: Colors.purpleAccent),
@@ -149,7 +149,7 @@ class ItemPage extends StatelessWidget {
                       '${movie.description}',
                       textAlign: TextAlign.justify,
                       style: GoogleFonts.karla(
-                        fontSize: 17,
+                        fontSize: 20,
                         fontWeight: FontWeight.w300,
                         color: Colors.blueGrey,
                       ),
@@ -202,7 +202,7 @@ class ItemPage extends StatelessWidget {
                       children: [
                         Text(
                           'Color: ',
-                          style: TextStyle(
+                          style: GoogleFonts.karla(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                               color: Colors.blueGrey),
@@ -237,9 +237,12 @@ class ItemPage extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(
+            height: 5,
+          ),
           Center(
             child: Text("Share To a Friend",
-                style: TextStyle(
+                style: GoogleFonts.karla(
                     fontSize: 20,
                     fontWeight: FontWeight.w300,
                     color: Colors.black)),
