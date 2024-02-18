@@ -150,7 +150,7 @@ class ItemPage extends StatelessWidget {
                       '${movie.description}',
                       textAlign: TextAlign.justify,
                       style: GoogleFonts.spaceMono(
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.w300,
                         color: Colors.blueGrey,
                       ),
