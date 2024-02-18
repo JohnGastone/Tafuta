@@ -29,19 +29,21 @@ class ItemPage extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          AnimatedButton(
-            width: 200,
-            text: 'SUBMIT',
-            selectedTextColor: Colors.black,
-            transitionType: TransitionType.BOTTOM_TO_TOP,
-            textStyle: TextStyle(
-                fontSize: 28,
-                letterSpacing: 5,
-                color: Colors.deepOrange,
-                fontWeight: FontWeight.w300),
-            onPress: () {
-              Navigator.of(context).pop();
-            },
+          Center(
+            child: AnimatedButton(
+              width: 250,
+              text: 'Rudi Shimoni',
+              selectedTextColor: Colors.black,
+              transitionType: TransitionType.BOTTOM_TO_TOP,
+              textStyle: GoogleFonts.spaceMono(
+                  fontSize: 20,
+                  letterSpacing: 5,
+                  color: Color.fromARGB(255, 100, 90, 86),
+                  fontWeight: FontWeight.w300),
+              onPress: () {
+                Navigator.of(context).pop();
+              },
+            ),
           ),
 
           // child: IconButton(
