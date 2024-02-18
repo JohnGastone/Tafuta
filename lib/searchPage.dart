@@ -35,7 +35,7 @@ class _SearchPageState extends State<SearchPage> {
         centerTitle: true,
         title: Text(
           "Movies Arena",
-          style: GoogleFonts.karla(fontSize: 22),
+          style: GoogleFonts.spaceMono(fontSize: 22),
         ),
       ),
       body: Padding(
@@ -46,7 +46,7 @@ class _SearchPageState extends State<SearchPage> {
               children: [
                 Text(
                   'Search for your favorite Movie',
-                  style: GoogleFonts.karla(
+                  style: GoogleFonts.spaceMono(
                       fontSize: 19,
                       fontWeight: FontWeight.w300,
                       color: Colors.white),
@@ -68,7 +68,7 @@ class _SearchPageState extends State<SearchPage> {
                           borderSide: BorderSide.none,
                         ),
                         hintText: "Eg: Kijiji cha Tambua Haki",
-                        hintStyle: GoogleFonts.karla(),
+                        hintStyle: GoogleFonts.spaceMono(),
                         suffixIcon: Icon(
                           Icons.search,
                         ),
@@ -83,14 +83,14 @@ class _SearchPageState extends State<SearchPage> {
                     children: [
                       Text(
                         'Movie Name',
-                        style: GoogleFonts.karla(
+                        style: GoogleFonts.spaceMono(
                             color: Color.fromARGB(255, 255, 255, 255),
                             fontSize: 20,
                             fontWeight: FontWeight.w200),
                       ),
                       Text(
                         'Rating',
-                        style: GoogleFonts.karla(
+                        style: GoogleFonts.spaceMono(
                             color: Color.fromARGB(255, 255, 255, 255),
                             fontSize: 20,
                             fontWeight: FontWeight.w200),
@@ -106,7 +106,7 @@ class _SearchPageState extends State<SearchPage> {
                         ? Center(
                             child: Text(
                               'No movies with that name found',
-                              style: GoogleFonts.karla(
+                              style: GoogleFonts.spaceMono(
                                   color: Colors.white,
                                   fontSize: 18,
                                   fontWeight: FontWeight.w300),
@@ -137,21 +137,21 @@ class _SearchPageState extends State<SearchPage> {
                                     ),
                                     title: Text(
                                       displayList[index].movieTitle!,
-                                      style: GoogleFonts.karla(
+                                      style: GoogleFonts.spaceMono(
                                           fontSize: 20,
                                           color: Color.fromARGB(
                                               255, 195, 205, 211)),
                                     ),
                                     subtitle: Text(
                                       '${displayList[index].releaseYear!}',
-                                      style: GoogleFonts.karla(
+                                      style: GoogleFonts.spaceMono(
                                           fontSize: 15,
                                           color: Color.fromARGB(
                                               255, 92, 165, 202)),
                                     ),
                                     trailing: Text(
                                         '${displayList[index].rating!}',
-                                        style: GoogleFonts.karla(
+                                        style: GoogleFonts.spaceMono(
                                             color: Colors.amber)),
                                   ),
                                 ))))

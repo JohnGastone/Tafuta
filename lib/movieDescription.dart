@@ -29,8 +29,8 @@ class ItemPage extends StatelessWidget {
           ),
           GradientButton(
             text: "Rudi shimoni",
-            textStyle:
-                GoogleFonts.karla(fontWeight: FontWeight.bold, fontSize: 15),
+            textStyle: GoogleFonts.spaceMono(
+                fontWeight: FontWeight.bold, fontSize: 15),
             gradientColors: [Colors.blue, Colors.brown],
             // height: 50,
             //borderRadius: 30.0,
@@ -69,7 +69,7 @@ class ItemPage extends StatelessWidget {
                       child: Row(
                         children: [
                           Text('${movie.movieTitle}',
-                              style: GoogleFonts.karla(
+                              style: GoogleFonts.spaceMono(
                                   fontSize: 25,
                                   fontWeight: FontWeight.w800,
                                   color: Colors.blueGrey)),
@@ -116,7 +116,7 @@ class ItemPage extends StatelessWidget {
                                 margin: EdgeInsets.symmetric(horizontal: 10),
                                 child: Text(
                                   '01',
-                                  style: GoogleFonts.karla(
+                                  style: GoogleFonts.spaceMono(
                                       fontSize: 13,
                                       fontWeight: FontWeight.w600,
                                       color: Colors.purpleAccent),
@@ -148,7 +148,7 @@ class ItemPage extends StatelessWidget {
                     child: Text(
                       '${movie.description}',
                       textAlign: TextAlign.justify,
-                      style: GoogleFonts.karla(
+                      style: GoogleFonts.spaceMono(
                         fontSize: 20,
                         fontWeight: FontWeight.w300,
                         color: Colors.blueGrey,
@@ -202,7 +202,7 @@ class ItemPage extends StatelessWidget {
                       children: [
                         Text(
                           'Color: ',
-                          style: GoogleFonts.karla(
+                          style: GoogleFonts.spaceMono(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                               color: Colors.blueGrey),
@@ -242,7 +242,7 @@ class ItemPage extends StatelessWidget {
           ),
           Center(
             child: Text("Share To a Friend",
-                style: GoogleFonts.karla(
+                style: GoogleFonts.spaceMono(
                     fontSize: 20,
                     fontWeight: FontWeight.w300,
                     color: Colors.black)),
