@@ -22,7 +22,7 @@ class ItemPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 197, 195, 201),
+      backgroundColor: Color.fromARGB(255, 221, 219, 224),
       body: ListView(
         children: [
           SizedBox(
