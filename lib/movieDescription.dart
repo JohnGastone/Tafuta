@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tafuta/model/movie_model.dart';
-import 'package:gradient_coloured_buttons/gradient_coloured_buttons.dart';
 import 'package:flutter_social_button/flutter_social_button.dart';
 import 'package:flutter_animated_button/flutter_animated_button.dart';
 
@@ -65,7 +64,7 @@ class ItemPage extends StatelessWidget {
               child: Column(
                 children: [
                   Padding(
-                      padding: EdgeInsets.only(top: 40, bottom: 20),
+                      padding: EdgeInsets.only(top: 20, bottom: 20),
                       child: Row(
                         children: [
                           Text('${movie.movieTitle}',
