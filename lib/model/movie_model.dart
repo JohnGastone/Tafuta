@@ -121,7 +121,7 @@ class MovieLists {
         12989876,
         876,
         'Uswazi',
-        '2.6 hrs'),
+        '2 hrs'),
     MovieModel(
         'Kijiwe Samli',
         2024,
