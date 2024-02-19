@@ -103,7 +103,7 @@ class ItemPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           RatingBar.builder(
-                            initialRating: 3,
+                            initialRating: 5,
                             minRating: 1,
                             direction: Axis.horizontal,
                             itemCount: 5,
