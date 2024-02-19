@@ -21,7 +21,7 @@ class _SimilarMoviesGridState extends State<SimilarMoviesGrid> {
   }
 
   Future<void> fetchSimilarMovies() async {
-    final apiKey = 'YOUR_TMDB_API_KEY';
+    final apiKey = 'ba86efc390e57094a77b83946be6625c';
     final response = await http.get(
       Uri.parse(
           'https://api.themoviedb.org/3/movie/550/similar?api_key=$apiKey'),
