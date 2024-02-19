@@ -56,6 +56,18 @@ class ItemPage extends StatelessWidget {
               width: 250,
             ),
           ),
+          Center(
+            child: Padding(
+              padding: EdgeInsets.zero,
+              child: Text(
+                '${movie.movieTitle}',
+                style: GoogleFonts.spaceMono(
+                    color: Colors.blueGrey,
+                    fontSize: 25,
+                    fontWeight: FontWeight.w200),
+              ),
+            ),
+          ),
           Container(
             width: double.infinity,
             color: Colors.white,
