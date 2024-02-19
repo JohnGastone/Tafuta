@@ -39,7 +39,9 @@ class _SimilarMoviesGridState extends State<SimilarMoviesGrid> {
         isLoading = false; // Update loading state after fetching movies
       });
     } else {
-      throw Exception('Failed to load similar movies');
+      errorMessage =
+          'Failed to load similar movies'; // Set error message if fetch fails
+      isLoading = false; // Update loading state
     }
   }
 
