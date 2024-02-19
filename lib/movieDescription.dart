@@ -82,15 +82,15 @@ class ItemPage extends StatelessWidget {
                         Text(
                           'Rate the movie',
                           style: GoogleFonts.spaceMono(
-                              color: Color.fromARGB(255, 255, 255, 255),
-                              fontSize: 20,
+                              color: Colors.blueGrey,
+                              fontSize: 15,
                               fontWeight: FontWeight.w200),
                         ),
                         Text(
-                          'Rating',
+                          'Leave a heart',
                           style: GoogleFonts.spaceMono(
-                              color: Color.fromARGB(255, 255, 255, 255),
-                              fontSize: 20,
+                              color: Colors.blueGrey,
+                              fontSize: 15,
                               fontWeight: FontWeight.w200),
                         )
                       ],
@@ -128,10 +128,8 @@ class ItemPage extends StatelessWidget {
                                           blurRadius: 10,
                                           offset: Offset(0, 3))
                                     ]),
-                                child: Icon(
-                                  CupertinoIcons.minus,
-                                  size: 10,
-                                ),
+                                child: Icon(CupertinoIcons.heart_slash,
+                                    size: 10, color: Colors.blueGrey),
                               ),
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 10),
@@ -155,10 +153,8 @@ class ItemPage extends StatelessWidget {
                                           blurRadius: 10,
                                           offset: Offset(0, 3))
                                     ]),
-                                child: Icon(
-                                  CupertinoIcons.plus,
-                                  size: 10,
-                                ),
+                                child: Icon(CupertinoIcons.heart_fill,
+                                    size: 10, color: Colors.blueGrey),
                               )
                             ],
                           ),
