@@ -177,7 +177,7 @@ class ItemPage extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(
-                          'Size:   ',
+                          'Number of Downloads:   ',
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
