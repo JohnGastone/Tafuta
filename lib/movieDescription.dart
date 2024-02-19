@@ -285,6 +285,9 @@ class ItemPage extends StatelessWidget {
                 buttonType: ButtonType.facebook,
                 mini: true,
               ),
+              SizedBox(
+                height: 15,
+              )
             ],
           )
         ],
