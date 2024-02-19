@@ -68,6 +68,9 @@ class ItemPage extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(
+            height: 15,
+          ),
           Container(
             width: double.infinity,
             color: Colors.white,
