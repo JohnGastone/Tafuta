@@ -46,7 +46,7 @@ class ItemPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 15,
+            height: 10,
           ),
           Padding(
             padding: EdgeInsets.zero,
@@ -72,14 +72,14 @@ class ItemPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Title',
+                          'Genre',
                           style: GoogleFonts.spaceMono(
                               color: Colors.blueGrey,
                               fontSize: 15,
                               fontWeight: FontWeight.w200),
                         ),
                         Text(
-                          'Genre',
+                          'Release Year',
                           style: GoogleFonts.spaceMono(
                               color: Colors.blueGrey,
                               fontSize: 15,
@@ -98,10 +98,21 @@ class ItemPage extends StatelessWidget {
                   Padding(
                       padding: EdgeInsets.only(top: 10, bottom: 20),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text('${movie.movieTitle}',
+                          Text('${movie.genre}',
                               style: GoogleFonts.spaceMono(
-                                  fontSize: 25,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.blueGrey)),
+                          Text('${movie.releaseYear}',
+                              style: GoogleFonts.spaceMono(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.blueGrey)),
+                          Text('${movie.runtime}',
+                              style: GoogleFonts.spaceMono(
+                                  fontSize: 18,
                                   fontWeight: FontWeight.w800,
                                   color: Colors.blueGrey)),
                         ],
@@ -160,7 +171,7 @@ class ItemPage extends StatelessWidget {
                                           blurRadius: 10,
                                           offset: Offset(0, 3))
                                     ]),
-                                child: Icon(CupertinoIcons.heart_slash,
+                                child: Icon(CupertinoIcons.heart,
                                     size: 10, color: Colors.blueGrey),
                               ),
                               Container(
