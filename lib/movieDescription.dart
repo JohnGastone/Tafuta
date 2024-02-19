@@ -235,7 +235,7 @@ class ItemPage extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(
-                          'Number of Downloads:   ',
+                          'Number of Downloads: ',
                           style: GoogleFonts.spaceMono(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
@@ -259,7 +259,7 @@ class ItemPage extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(
-                          'Number of Recommendations:   ',
+                          'Number of Recommendations: ',
                           style: GoogleFonts.spaceMono(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
@@ -278,46 +278,80 @@ class ItemPage extends StatelessWidget {
                       ],
                     ),
                   ),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Center(
+                    child: Text("Share To a Friend",
+                        style: GoogleFonts.spaceMono(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.black)),
+                  ),
+                  SizedBox(
+                    height: 6,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      FlutterSocialButton(
+                        onTap: () {},
+                        buttonType: ButtonType.whatsapp,
+                        mini: true,
+                      ),
+                      FlutterSocialButton(
+                        onTap: () {},
+                        buttonType: ButtonType.twitter,
+                        mini: true,
+                      ),
+                      FlutterSocialButton(
+                        onTap: () {},
+                        buttonType: ButtonType.facebook,
+                        mini: true,
+                      ),
+                      SizedBox(
+                        height: 15,
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
           ),
-          SizedBox(
-            height: 5,
-          ),
-          Center(
-            child: Text("Share To a Friend",
-                style: GoogleFonts.spaceMono(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w300,
-                    color: Colors.black)),
-          ),
-          SizedBox(
-            height: 6,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              FlutterSocialButton(
-                onTap: () {},
-                buttonType: ButtonType.whatsapp,
-                mini: true,
-              ),
-              FlutterSocialButton(
-                onTap: () {},
-                buttonType: ButtonType.twitter,
-                mini: true,
-              ),
-              FlutterSocialButton(
-                onTap: () {},
-                buttonType: ButtonType.facebook,
-                mini: true,
-              ),
-              SizedBox(
-                height: 15,
-              )
-            ],
-          )
+
+          //   Center(
+          //     child: Text("Share To a Friend",
+          //         style: GoogleFonts.spaceMono(
+          //             fontSize: 20,
+          //             fontWeight: FontWeight.w300,
+          //             color: Colors.black)),
+          //   ),
+          //   SizedBox(
+          //     height: 6,
+          //   ),
+          //   Row(
+          //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //     children: [
+          //       FlutterSocialButton(
+          //         onTap: () {},
+          //         buttonType: ButtonType.whatsapp,
+          //         mini: true,
+          //       ),
+          //       FlutterSocialButton(
+          //         onTap: () {},
+          //         buttonType: ButtonType.twitter,
+          //         mini: true,
+          //       ),
+          //       FlutterSocialButton(
+          //         onTap: () {},
+          //         buttonType: ButtonType.facebook,
+          //         mini: true,
+          //       ),
+          //       SizedBox(
+          //         height: 15,
+          //       )
+          //     ],
+          //   )
         ],
       ),
     );
