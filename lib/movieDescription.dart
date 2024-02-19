@@ -86,7 +86,7 @@ class ItemPage extends StatelessWidget {
                               fontWeight: FontWeight.w200),
                         ),
                         Text(
-                          'Runtime',
+                          'Duration',
                           style: GoogleFonts.spaceMono(
                               color: Colors.blueGrey,
                               fontSize: 15,
