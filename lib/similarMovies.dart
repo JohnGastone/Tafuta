@@ -1,4 +1,4 @@
-// ignore_for_file: library_private_types_in_public_api, prefer_const_declarations
+// ignore_for_file: library_private_types_in_public_api, prefer_const_declarations, prefer_const_constructors, unnecessary_null_comparison, use_key_in_widget_constructors, prefer_const_constructors_in_immutables
 
 import 'dart:convert';
 import 'package:flutter/material.dart';
