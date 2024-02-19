@@ -24,7 +24,11 @@ class MovieLists {
         'Safari ya Gwalu ni komedi inayozunguka maisha ya kijiji kimoja ambapo kuku mgeni analeta fujo na kuchekesha. Kila anayekutana naye anakabiliwa na changamoto za kipekee. Kuku huyu si wa kawaida, ana siri zake na anabadilisha maisha ya kijiji. Mwisho wa siku, kuku huyu analeta mabadiliko yasiyotarajiwa.'),
     MovieModel('Paka Shume', 2020, 4.3, 'images/jj.jpeg',
         'Katika Paka Shume, paka mjanja anajikuta katika mfululizo wa matukio ya kusisimua na ya kuchekesha. Anatumia ujanja wake kutoroka hali ngumu na kutafuta maisha bora. Kila rafiki anayekutana naye anamfundisha somo muhimu. Ingawa ni mjanja, paka huyu ana moyo wa kipekee unaovutia wote.'),
-    MovieModel('Ukiinama Ntiti ukiinuka Ntiti', 2021, 4.0, 'images/mwana.jpeg',
+    MovieModel(
+        'Ukiinama Ntiti \n ukiinuka Ntiti',
+        2021,
+        4.0,
+        'images/mwana.jpeg',
         'Hii ni filamu ya kitendawili kinachosisimua akili. Inaangazia usemi wa Kiswahili na utamaduni wake. Ni safari ya kugundua maana halisi ya methali za Kiswahili. Shujaa wetu anapita katika mitihani ya hekima na akili. Anajifunza kwamba maisha yenyewe ni kitendawili kikubwa.'),
     MovieModel('Baba Kilakshal', 2020, 4.8, 'images/maneno10.jpeg',
         'Baba Kilakshal ni filamu ya kusisimua inayomfuata baba anayepambana kulinda familia yake dhidi ya maadui. Anakabiliana na changamoto za kifedha na kijamii. Katika safari hii, anagundua maana ya kujitolea na sadaka. Kila uamuzi wake unaweka mustakabali wa familia yake katika mizani.'),
