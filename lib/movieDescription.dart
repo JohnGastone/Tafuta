@@ -45,14 +45,6 @@ class ItemPage extends StatelessWidget {
               },
             ),
           ),
-
-          // child: IconButton(
-          //   onPressed: () {
-          //     Navigator.of(context).pop();
-          //   },
-          //   icon: Icon(Icons.arrow_back),
-          // )
-
           SizedBox(
             height: 15,
           ),
