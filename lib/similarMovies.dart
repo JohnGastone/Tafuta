@@ -13,6 +13,8 @@ class SimilarMoviesGrid extends StatefulWidget {
 
 class _SimilarMoviesGridState extends State<SimilarMoviesGrid> {
   late List<Movie> movies;
+  late bool isLoading;
+  late String errorMessage;
 
   @override
   void initState() {
