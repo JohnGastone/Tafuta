@@ -36,6 +36,7 @@ class _SimilarMoviesGridState extends State<SimilarMoviesGrid> {
       final List<dynamic> results = data['results'];
       setState(() {
         movies = results.map((json) => Movie.fromJson(json)).toList();
+        isLoading = false; // Update loading state after fetching movies
       });
     } else {
       throw Exception('Failed to load similar movies');
