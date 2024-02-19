@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:tafuta/model/movie_model.dart';
 import 'package:flutter_social_button/flutter_social_button.dart';
 import 'package:flutter_animated_button/flutter_animated_button.dart';
+import 'package:tafuta/similarMovies.dart';
 
 class ItemPage extends StatelessWidget {
   List<Color> clrs = [
@@ -318,40 +319,7 @@ class ItemPage extends StatelessWidget {
               ),
             ),
           ),
-
-          //   Center(
-          //     child: Text("Share To a Friend",
-          //         style: GoogleFonts.spaceMono(
-          //             fontSize: 20,
-          //             fontWeight: FontWeight.w300,
-          //             color: Colors.black)),
-          //   ),
-          //   SizedBox(
-          //     height: 6,
-          //   ),
-          //   Row(
-          //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //     children: [
-          //       FlutterSocialButton(
-          //         onTap: () {},
-          //         buttonType: ButtonType.whatsapp,
-          //         mini: true,
-          //       ),
-          //       FlutterSocialButton(
-          //         onTap: () {},
-          //         buttonType: ButtonType.twitter,
-          //         mini: true,
-          //       ),
-          //       FlutterSocialButton(
-          //         onTap: () {},
-          //         buttonType: ButtonType.facebook,
-          //         mini: true,
-          //       ),
-          //       SizedBox(
-          //         height: 15,
-          //       )
-          //     ],
-          //   )
+          SimilarMoviesGrid()
         ],
       ),
     );
