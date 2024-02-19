@@ -19,7 +19,9 @@ class _SimilarMoviesGridState extends State<SimilarMoviesGrid> {
   @override
   void initState() {
     super.initState();
-    fetchSimilarMovies();
+    isLoading = true; // Initially set loading to true
+    errorMessage = ''; // Initially set error message to empty string
+    fetchSimilarMovies(); // Fetch similar movies when widget is initialized
   }
 
   Future<void> fetchSimilarMovies() async {
