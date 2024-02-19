@@ -100,8 +100,8 @@ class MovieLists {
         'Hii ni filamu ya kitendawili kinachosisimua akili. Inaangazia usemi wa Kiswahili na utamaduni wake. Ni safari ya kugundua maana halisi ya methali za Kiswahili. Shujaa wetu anapita katika mitihani ya hekima na akili. Anajifunza kwamba maisha yenyewe ni kitendawili kikubwa.',
         5464738,
         201,
-        'Uswazi',
-        '2.6 hrs'),
+        'Drama',
+        '1.6 hrs'),
     MovieModel(
         'Baba Kilakshal',
         2020,
