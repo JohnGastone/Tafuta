@@ -160,7 +160,7 @@ class MovieLists {
         'Harakati za pimbi ni filamu ya kusisimua inayofuata maisha ya kijana mtaani anayetafuta njia ya kutokea.',
         988766,
         121,
-        'Uswazi',
+        'Comedy',
         '2.6 hrs'),
     MovieModel(
         'Shumileta',
