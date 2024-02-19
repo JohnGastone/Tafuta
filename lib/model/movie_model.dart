@@ -7,7 +7,7 @@ class MovieModel {
   int? downloads;
   int? recommendations;
   MovieModel(this.movieTitle, this.releaseYear, this.rating, this.posterImage,
-      this.description, this.downloads);
+      this.description, this.downloads, this.recommendations);
 }
 
 class MovieLists {
