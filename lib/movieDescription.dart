@@ -63,7 +63,7 @@ class ItemPage extends StatelessWidget {
                 '${movie.movieTitle}',
                 style: GoogleFonts.spaceMono(
                     color: Colors.blueGrey,
-                    fontSize: 25,
+                    fontSize: 35,
                     fontWeight: FontWeight.w200),
               ),
             ),
