@@ -25,7 +25,7 @@ class MovieLists {
     MovieModel('Paka Shume', 2020, 4.3, 'images/jj.jpeg',
         'Katika Paka Shume, paka mjanja anajikuta katika mfululizo wa matukio ya kusisimua na ya kuchekesha. Anatumia ujanja wake kutoroka hali ngumu na kutafuta maisha bora. Kila rafiki anayekutana naye anamfundisha somo muhimu. Ingawa ni mjanja, paka huyu ana moyo wa kipekee unaovutia wote.'),
     MovieModel(
-        'Ukiinama Ntiti \nukiinuka Ntiti',
+        'Ukiinama Ntiti,\nukiinuka Ntiti',
         2021,
         4.0,
         'images/mwana.jpeg',
