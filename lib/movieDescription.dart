@@ -23,7 +23,7 @@ class ItemPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFEDECF2),
+      backgroundColor: Color.fromARGB(255, 197, 195, 201),
       body: ListView(
         children: [
           SizedBox(
@@ -35,6 +35,7 @@ class ItemPage extends StatelessWidget {
               text: 'Rudi Shimoni',
               selectedTextColor: Colors.black,
               transitionType: TransitionType.BOTTOM_TO_TOP,
+              borderRadius: 15,
               textStyle: GoogleFonts.spaceMono(
                   fontSize: 20,
                   letterSpacing: 5,
