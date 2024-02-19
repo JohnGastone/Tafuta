@@ -75,6 +75,28 @@ class ItemPage extends StatelessWidget {
                         ],
                       )),
                   Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 1),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Rate the movie',
+                          style: GoogleFonts.spaceMono(
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              fontSize: 20,
+                              fontWeight: FontWeight.w200),
+                        ),
+                        Text(
+                          'Rating',
+                          style: GoogleFonts.spaceMono(
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              fontSize: 20,
+                              fontWeight: FontWeight.w200),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
                     padding: EdgeInsets.only(top: 5, bottom: 10),
                     child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
