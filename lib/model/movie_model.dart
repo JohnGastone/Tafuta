@@ -131,7 +131,7 @@ class MovieLists {
         4353234,
         400,
         'Uswazi',
-        '2.6 hrs'),
+        '1.5 hrs'),
     MovieModel(
         'Kijiji cha Tambua Haki',
         2020,
