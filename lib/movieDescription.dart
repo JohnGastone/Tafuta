@@ -211,7 +211,7 @@ class ItemPage extends StatelessWidget {
                         //   width: 10,
                         // ),
                         Text(
-                          '${movie.downloads}',
+                          '${movie.recommendations}',
                           style: GoogleFonts.spaceMono(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
