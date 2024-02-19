@@ -63,8 +63,40 @@ class ItemPage extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 children: [
+                  SizedBox(
+                    height: 10,
+                  ),
                   Padding(
-                      padding: EdgeInsets.only(top: 20, bottom: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 1),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Title',
+                          style: GoogleFonts.spaceMono(
+                              color: Colors.blueGrey,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w200),
+                        ),
+                        Text(
+                          'Genre',
+                          style: GoogleFonts.spaceMono(
+                              color: Colors.blueGrey,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w200),
+                        ),
+                        Text(
+                          'Runtime',
+                          style: GoogleFonts.spaceMono(
+                              color: Colors.blueGrey,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w200),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                      padding: EdgeInsets.only(top: 10, bottom: 20),
                       child: Row(
                         children: [
                           Text('${movie.movieTitle}',

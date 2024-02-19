@@ -6,6 +6,8 @@ class MovieModel {
   String? description;
   int? downloads;
   int? recommendations;
+  String? genre;
+  String? runtime;
   MovieModel(this.movieTitle, this.releaseYear, this.rating, this.posterImage,
       this.description, this.downloads, this.recommendations);
 }
