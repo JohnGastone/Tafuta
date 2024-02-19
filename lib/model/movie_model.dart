@@ -80,7 +80,7 @@ class MovieLists {
         'Safari ya Gwalu ni komedi inayozunguka maisha ya kijiji kimoja ambapo kuku mgeni analeta fujo na kuchekesha. Kila anayekutana naye anakabiliwa na changamoto za kipekee. Kuku huyu si wa kawaida, ana siri zake na anabadilisha maisha ya kijiji. Mwisho wa siku, kuku huyu analeta mabadiliko yasiyotarajiwa.',
         500984,
         768,
-        'Poverty',
+        'Adventure',
         '3 hrs'),
     MovieModel(
         'Paka Shume',
