@@ -30,7 +30,7 @@ class MovieLists {
         'Filamu ya Panguso inasimulia safari ya kundi la vijana katika kutafuta haki yao. Wanapitia changamoto nyingi, lakini hawakati tamaa. Wanagundua nguvu ya umoja na mshikamano. Siri za zamani zinafichuliwa, zikichanganya mapambano yao. Hata hivyo, upendo na urafiki vinazidi majaribu.',
         2300084,
         234,
-        'Swahili life',
+        'Uswazi',
         '2.3 hrs'),
     MovieModel(
         'Chausiku',
@@ -70,7 +70,7 @@ class MovieLists {
         'Mama Kimbo ni filamu inayoelezea nguvu ya mwanamke katika jamii. Inatupa mwanga kwenye changamoto anazokutana nazo. Anapambana na mila na desturi zilizopitwa na wakati. Mwanamke huyu jasiri anakabiliana na maadui zake bila woga. Kupitia hekima na ujasiri, anabadilisha maisha ya watu wanaomzunguka.',
         4536242,
         100,
-        'Swahili Life',
+        'Uswazi',
         '2.5 hrs'),
     MovieModel(
         'Safari ya Gwalu',
@@ -110,7 +110,7 @@ class MovieLists {
         'Baba Kilakshal ni filamu ya kusisimua inayomfuata baba anayepambana kulinda familia yake dhidi ya maadui. Anakabiliana na changamoto za kifedha na kijamii. Katika safari hii, anagundua maana ya kujitolea na sadaka. Kila uamuzi wake unaweka mustakabali wa familia yake katika mizani.',
         5432341,
         1657,
-        'Swahili Life',
+        'Uswazi',
         '3.6 hrs'),
     MovieModel(
         'Mama Mbelemende',
