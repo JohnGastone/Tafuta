@@ -47,8 +47,20 @@ class _SimilarMoviesGridState extends State<SimilarMoviesGrid> {
 
   @override
   Widget build(BuildContext context) {
+    // Handle different states: loading, error, and success
+    if (isLoading) {
+      return Center(
+          child: CircularProgressIndicator()); // Show loading indicator
+    }
+
+    if (errorMessage.isNotEmpty) {
+      return Center(child: Text(errorMessage)); // Show error message if present
+    }
+
     if (movies == null) {
-      return Center(child: CircularProgressIndicator());
+      return Center(
+          child: Text(
+              'No similar movies found')); // Show message if no movies found
     }
 
     return GridView.builder(
