@@ -5,6 +5,7 @@ class MovieModel {
   String? posterImage;
   String? description;
   int? downloads;
+  int? recommendations;
   MovieModel(this.movieTitle, this.releaseYear, this.rating, this.posterImage,
       this.description, this.downloads);
 }
