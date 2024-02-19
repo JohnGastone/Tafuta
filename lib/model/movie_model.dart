@@ -9,7 +9,7 @@ class MovieModel {
   String? genre;
   String? runtime;
   MovieModel(this.movieTitle, this.releaseYear, this.rating, this.posterImage,
-      this.description, this.downloads, this.recommendations);
+      this.description, this.downloads, this.recommendations, this.genre);
 }
 
 class MovieLists {
