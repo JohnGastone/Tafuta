@@ -311,7 +311,7 @@ class ItemPage extends StatelessWidget {
                         mini: true,
                       ),
                       SizedBox(
-                        height: 15,
+                        height: 25,
                       )
                     ],
                   )
