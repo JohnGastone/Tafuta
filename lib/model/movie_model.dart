@@ -140,8 +140,8 @@ class MovieLists {
         'Filamu hii inatupeleka katika kijiji ambacho wanakijiji wanapambana kutambua na kudai haki zao.',
         3121341,
         908,
-        'Uswazi',
-        '2.6 hrs'),
+        'Adventure',
+        '4 hrs'),
     MovieModel(
         'Anko JJ',
         2021,
