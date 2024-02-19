@@ -110,8 +110,8 @@ class MovieLists {
         'Baba Kilakshal ni filamu ya kusisimua inayomfuata baba anayepambana kulinda familia yake dhidi ya maadui. Anakabiliana na changamoto za kifedha na kijamii. Katika safari hii, anagundua maana ya kujitolea na sadaka. Kila uamuzi wake unaweka mustakabali wa familia yake katika mizani.',
         5432341,
         1657,
-        'Uswazi',
-        '2.6 hrs'),
+        'Swahili Life',
+        '3.6 hrs'),
     MovieModel(
         'Mama Mbelemende',
         2013,
