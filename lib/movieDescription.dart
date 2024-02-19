@@ -187,7 +187,7 @@ class ItemPage extends StatelessWidget {
                         //   width: 10,
                         // ),
                         Text(
-                          '21873',
+                          '${movie.downloads}',
                           style: GoogleFonts.spaceMono(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
