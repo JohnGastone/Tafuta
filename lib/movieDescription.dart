@@ -290,7 +290,7 @@ class ItemPage extends StatelessWidget {
                             color: Colors.black)),
                   ),
                   SizedBox(
-                    height: 6,
+                    height: 16,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -314,12 +314,22 @@ class ItemPage extends StatelessWidget {
                         height: 25,
                       )
                     ],
-                  )
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Center(
+                    child: Text("Similar Movies",
+                        style: GoogleFonts.spaceMono(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.black)),
+                  ),
                 ],
               ),
             ),
           ),
-          SimilarMoviesGrid()
+          // SimilarMoviesGrid()
         ],
       ),
     );
