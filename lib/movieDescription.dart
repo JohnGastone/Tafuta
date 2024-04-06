@@ -325,7 +325,13 @@ class ItemPage extends StatelessWidget {
                             fontWeight: FontWeight.w300,
                             color: Colors.black)),
                   ),
-                  SimilarMoviesGrid()
+                  SizedBox(
+                    height: 16,
+                  ),
+                  SimilarMoviesGrid(),
+                  SizedBox(
+                    height: 50,
+                  )
                 ],
               ),
             ),

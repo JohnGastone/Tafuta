@@ -8,15 +8,11 @@ final List<SimilarMovies> similarMovies = [
   ),
   SimilarMovies(
     movieTitle: "Movie 2",
-    movieImage: 'images/gwalu.jpg',
+    movieImage: 'images/chausiku.jpeg',
   ),
   SimilarMovies(
     movieTitle: "Movie 3",
     movieImage: 'images/kilakshal.jpeg',
-  ),
-  SimilarMovies(
-    movieTitle: "Movie 4",
-    movieImage: 'images/tafuta.png',
   ),
   SimilarMovies(
     movieTitle: "Movie 5",

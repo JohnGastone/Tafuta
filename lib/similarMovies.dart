@@ -63,10 +63,10 @@ class SimilarMoviesGrid extends StatelessWidget {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset(
-                        similarMovies[index].movieTitle,
-                        height: 110,
-                      )
+                      // Image.asset(
+                      //   similarMovies[index].movieTitle,
+                      //   height: 110,
+                      // )
                     ],
                   )
                 ],
