@@ -3,23 +3,23 @@ import '../model/similarMovies_model.dart';
 
 final List<SimilarMovies> similarMovies = [
   SimilarMovies(
-    movieTitle: "Movie 1",
+    movieTitle: "Safari ya Gwalu",
     movieImage: 'images/gwalu.jpg',
   ),
   SimilarMovies(
-    movieTitle: "Movie 2",
+    movieTitle: "Chausiku",
     movieImage: 'images/chausiku.jpeg',
   ),
   SimilarMovies(
-    movieTitle: "Movie 3",
+    movieTitle: "Mama Mbelemende",
     movieImage: 'images/kilakshal.jpeg',
   ),
   SimilarMovies(
-    movieTitle: "Movie 5",
+    movieTitle: "More than a lion",
     movieImage: 'images/gusa.jpeg',
   ),
   SimilarMovies(
-    movieTitle: "Movie 6",
+    movieTitle: "Juha",
     movieImage: 'images/mwana.jpeg',
   )
 ];
