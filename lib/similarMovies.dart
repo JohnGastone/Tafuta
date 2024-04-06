@@ -1,138 +1,78 @@
-// ignore_for_file: library_private_types_in_public_api, prefer_const_declarations, prefer_const_constructors, unnecessary_null_comparison, use_key_in_widget_constructors, prefer_const_constructors_in_immutables
+// ignore_for_file: prefer_const_constructors
 
-import 'dart:convert';
+// import 'package:dashboard/data/data.dart';
+// import 'package:dashboard/screens/kazi_zilizopita.dart';
+// import 'package:dashboard/widgets/zilizopitaTester.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+// import 'package:percent_indicator/percent_indicator.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:tafuta/data/similarMoviesData.dart';
+import 'package:tafuta/model/similarMovies_model.dart';
 
-class SimilarMoviesGrid extends StatefulWidget {
-  const SimilarMoviesGrid({super.key});
-
-  @override
-  _SimilarMoviesGridState createState() => _SimilarMoviesGridState();
-}
-
-class _SimilarMoviesGridState extends State<SimilarMoviesGrid> {
-  late List<Movie> movies;
-  late bool isLoading;
-  late String errorMessage;
-
-  @override
-  void initState() {
-    super.initState();
-    isLoading = true; // Initially set loading to true
-    errorMessage = ''; // Initially set error message to empty string
-    fetchSimilarMovies(); // Fetch similar movies when widget is initialized
-  }
-
-  Future<void> fetchSimilarMovies() async {
-    final apiKey = 'ba86efc390e57094a77b83946be6625c';
-    final response = await http.get(
-      Uri.parse(
-          'https://api.themoviedb.org/3/movie/550/similar?api_key=$apiKey'),
-    );
-
-    if (response.statusCode == 200) {
-      final data = jsonDecode(response.body);
-      final List<dynamic> results = data['results'];
-      setState(() {
-        movies = results.map((json) => Movie.fromJson(json)).toList();
-        isLoading = false; // Update loading state after fetching movies
-      });
-    } else {
-      errorMessage =
-          'Failed to load similar movies'; // Set error message if fetch fails
-      isLoading = false; // Update loading state
-    }
-  }
+class SimilarMoviesGrid extends StatelessWidget {
+  const SimilarMoviesGrid({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // Handle different states: loading, error, and success
-    if (isLoading) {
-      return Center(
-          child: CircularProgressIndicator()); // Show loading indicator
-    }
-
-    if (errorMessage.isNotEmpty) {
-      return Center(child: Text(errorMessage)); // Show error message if present
-    }
-
-    if (movies == null) {
-      return Center(
-          child: Text(
-              'No similar movies found')); // Show message if no movies found
-    }
-
     return GridView.builder(
-      itemCount: movies.length,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        crossAxisSpacing: 10.0,
-        mainAxisSpacing: 10.0,
-        childAspectRatio: 0.7,
-      ),
-      itemBuilder: (context, index) {
-        return MovieItem(movie: movies[index]);
-      },
-    );
-  }
-}
-
-class MovieItem extends StatelessWidget {
-  final Movie movie;
-
-  MovieItem({required this.movie});
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        // Handle tap event
-      },
-      child: Card(
-        elevation: 2.0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10.0),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(
-              child: ClipRRect(
-                borderRadius: BorderRadius.vertical(top: Radius.circular(10.0)),
-                child: Image.network(
-                  'https://image.tmdb.org/t/p/w500${movie.posterPath}',
-                  fit: BoxFit.cover,
-                ),
+        itemCount: similarMovies.length,
+        physics: const NeverScrollableScrollPhysics(),
+        shrinkWrap: true,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            childAspectRatio: 16 / 7, crossAxisCount: 1, mainAxisSpacing: 20),
+        itemBuilder: (context, index) {
+          return Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage(similarMovies[index].movieImage),
+                  fit: BoxFit.fill),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Text(
+                        similarMovies[index].movieTitle,
+                        style: GoogleFonts.spaceMono(
+                            color: Colors.white, fontSize: 18),
+                      ),
+                      Text(
+                        similarMovies[index].movieTitle,
+                        style: GoogleFonts.spaceMono(color: Colors.white),
+                      ),
+                      // CircularPercentIndicator(
+                      //   radius: 30,
+                      //   lineWidth: 8,
+                      //   animation: true,
+                      //   animationDuration: 1500,
+                      //   circularStrokeCap: CircularStrokeCap.round,
+                      //   percent: similarMovies[index].percent / 100,
+                      //   progressColor: Colors.white,
+                      //   center: Text(
+                      //     "${SimilarMovies[index].mo}%",
+                      //     style: GoogleFonts.spaceMono(color: Colors.white),
+                      //   ),
+                      // )
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        similarMovies[index].movieTitle,
+                        height: 110,
+                      )
+                    ],
+                  )
+                ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                movie.title,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16.0,
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class Movie {
-  final String title;
-  final String posterPath;
-
-  Movie({required this.title, required this.posterPath});
-
-  factory Movie.fromJson(Map<String, dynamic> json) {
-    return Movie(
-      title: json['title'],
-      posterPath: json['poster_path'],
-    );
+          );
+        });
   }
 }
