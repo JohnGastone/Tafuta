@@ -3,6 +3,7 @@
 // import 'package:dashboard/data/data.dart';
 // import 'package:dashboard/screens/kazi_zilizopita.dart';
 // import 'package:dashboard/widgets/zilizopitaTester.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'package:percent_indicator/percent_indicator.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -23,10 +24,11 @@ class SimilarMoviesGrid extends StatelessWidget {
         itemBuilder: (context, index) {
           return Container(
             decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(similarMovies[index].movieImage),
-                  fit: BoxFit.fill),
-            ),
+                // image: DecorationImage(
+                //     image: AssetImage(similarMovies[index].movieImage),
+                //     fit: BoxFit.fill),
+                color: Colors.white54,
+                border: Border()),
             child: Padding(
               padding: const EdgeInsets.all(16),
               child: Row(
@@ -39,11 +41,14 @@ class SimilarMoviesGrid extends StatelessWidget {
                       Text(
                         similarMovies[index].movieTitle,
                         style: GoogleFonts.spaceMono(
-                            color: Colors.white, fontSize: 18),
+                            color: Color.fromARGB(255, 75, 84, 99),
+                            fontSize: 18),
                       ),
                       Text(
                         similarMovies[index].movieTitle,
-                        style: GoogleFonts.spaceMono(color: Colors.white),
+                        style: GoogleFonts.spaceMono(
+                          color: Color.fromARGB(255, 75, 84, 99),
+                        ),
                       ),
                       // CircularPercentIndicator(
                       //   radius: 30,
@@ -60,14 +65,17 @@ class SimilarMoviesGrid extends StatelessWidget {
                       // )
                     ],
                   ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      // Image.asset(
-                      //   similarMovies[index].movieTitle,
-                      //   height: 110,
-                      // )
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Flexible(
+                          child: Image.asset(similarMovies[index].movieImage,
+                              height: 110, width: 124),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
