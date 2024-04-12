@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 // import 'package:percent_indicator/percent_indicator.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tafuta/data/similarMoviesData.dart';
-import 'package:tafuta/model/similarMovies_model.dart';
 
 class SimilarMoviesGrid extends StatelessWidget {
   const SimilarMoviesGrid({Key? key}) : super(key: key);
@@ -24,7 +23,7 @@ class SimilarMoviesGrid extends StatelessWidget {
         itemBuilder: (context, index) {
           return Container(
             decoration: BoxDecoration(
-                color: const Color.fromARGB(137, 148, 142, 142),
+                color: Color.fromARGB(136, 218, 180, 180),
                 border: Border(),
                 borderRadius: BorderRadius.circular(20)),
             child: Padding(
