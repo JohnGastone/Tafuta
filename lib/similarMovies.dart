@@ -34,7 +34,7 @@ class SimilarMoviesGrid extends StatelessWidget {
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Text(
                         similarMovies[index].movieTitle,
