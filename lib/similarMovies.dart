@@ -24,9 +24,6 @@ class SimilarMoviesGrid extends StatelessWidget {
         itemBuilder: (context, index) {
           return Container(
             decoration: BoxDecoration(
-                // image: DecorationImage(
-                //     image: AssetImage(similarMovies[index].movieImage),
-                //     fit: BoxFit.fill),
                 color: const Color.fromARGB(137, 148, 142, 142),
                 border: Border(),
                 borderRadius: BorderRadius.circular(20)),
@@ -51,19 +48,6 @@ class SimilarMoviesGrid extends StatelessWidget {
                           color: Color.fromARGB(255, 75, 84, 99),
                         ),
                       ),
-                      // CircularPercentIndicator(
-                      //   radius: 30,
-                      //   lineWidth: 8,
-                      //   animation: true,
-                      //   animationDuration: 1500,
-                      //   circularStrokeCap: CircularStrokeCap.round,
-                      //   percent: similarMovies[index].percent / 100,
-                      //   progressColor: Colors.white,
-                      //   center: Text(
-                      //     "${SimilarMovies[index].mo}%",
-                      //     style: GoogleFonts.spaceMono(color: Colors.white),
-                      //   ),
-                      // )
                     ],
                   ),
                   Padding(
