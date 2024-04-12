@@ -44,7 +44,7 @@ class MovieLists {
         '3 hrs'),
     MovieModel(
         'Gusa Unase',
-        2021,
+        2011,
         4.9,
         'images/gusa.jpeg',
         'Gusa Unase ni filamu inayoangazia maisha ya mwanamuziki chipukizi. Ana ndoto kubwa lakini njia yake imejaa vikwazo. Talanta yake inavutia wengi, lakini wivu na ushindani viko nyuma ya kila kona. Anapambana kupata nafasi ya kuonyesha kipaji chake. Mwishowe, anafahamu thamani ya kujiamini na kujitolea.',
@@ -74,7 +74,7 @@ class MovieLists {
         '2.5 hrs'),
     MovieModel(
         'Safari ya Gwalu',
-        2023,
+        2014,
         5.0,
         'images/gwalu.jpg',
         'Safari ya Gwalu ni komedi inayozunguka maisha ya kijiji kimoja ambapo kuku mgeni analeta fujo na kuchekesha. Kila anayekutana naye anakabiliwa na changamoto za kipekee. Kuku huyu si wa kawaida, ana siri zake na anabadilisha maisha ya kijiji. Mwisho wa siku, kuku huyu analeta mabadiliko yasiyotarajiwa.',
@@ -84,7 +84,7 @@ class MovieLists {
         '3 hrs'),
     MovieModel(
         'Paka Shume',
-        2020,
+        2010,
         4.3,
         'images/jj.jpeg',
         'Katika Paka Shume, paka mjanja anajikuta katika mfululizo wa matukio ya kusisimua na ya kuchekesha. Anatumia ujanja wake kutoroka hali ngumu na kutafuta maisha bora. Kila rafiki anayekutana naye anamfundisha somo muhimu. Ingawa ni mjanja, paka huyu ana moyo wa kipekee unaovutia wote.',
@@ -124,7 +124,7 @@ class MovieLists {
         '2 hrs'),
     MovieModel(
         'Kijiwe Samli',
-        2024,
+        2023,
         5.0,
         'images/gwalu.jpg',
         'Kijiwe Samli ni filamu inayochunguza maisha ya vijana katika kijiwe cha mijadala, kinachobadilisha maisha yao. Maswala ya kisiasa na kijamii yanajadiliwa na kupatiwa ufumbuzi. Ni muunganiko wa hekima, vijana na mabadiliko ya jamii.',
@@ -134,7 +134,7 @@ class MovieLists {
         '1.5 hrs'),
     MovieModel(
         'Kijiji cha Tambua Haki',
-        2020,
+        2012,
         4.8,
         'images/haki.jpeg',
         'Filamu hii inatupeleka katika kijiji ambacho wanakijiji wanapambana kutambua na kudai haki zao.',
@@ -144,7 +144,7 @@ class MovieLists {
         '4 hrs'),
     MovieModel(
         'Anko JJ',
-        2021,
+        2010,
         4.5,
         'images/jj.jpeg',
         'Anko JJ ni komedi inayofuata matukio ya mjomba anayependa kuingilia kati na kusuluhisha matatizo ya watu.',
@@ -154,7 +154,7 @@ class MovieLists {
         '2.6 hrs'),
     MovieModel(
         'Harakati za pimbi',
-        2020,
+        2010,
         4.4,
         'images/kilakshal.jpeg',
         'Harakati za pimbi ni filamu ya kusisimua inayofuata maisha ya kijana mtaani anayetafuta njia ya kutokea.',
@@ -164,7 +164,7 @@ class MovieLists {
         '2.6 hrs'),
     MovieModel(
         'Shumileta',
-        2013,
+        2010,
         4.5,
         'images/shumileta.jpeg',
         'Shumileta ni filamu ya kihistoria inayoangazia mapambano ya kijasiri ya mwanamke dhidi ya ukoloni.',
@@ -174,7 +174,7 @@ class MovieLists {
         '2.6 hrs'),
     MovieModel(
         'Jumba la Dhahabu',
-        2024,
+        2006,
         4.1,
         'images/jumba.jpeg',
         'Jini Kabula ni filamu ya kusisimua inayoangazia hadithi ya kijiji kinachokabiliwa na nguvu za giza.',

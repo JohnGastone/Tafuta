@@ -27,8 +27,9 @@ class SimilarMoviesGrid extends StatelessWidget {
                 // image: DecorationImage(
                 //     image: AssetImage(similarMovies[index].movieImage),
                 //     fit: BoxFit.fill),
-                color: Colors.white54,
-                border: Border()),
+                color: const Color.fromARGB(137, 148, 142, 142),
+                border: Border(),
+                borderRadius: BorderRadius.circular(20)),
             child: Padding(
               padding: const EdgeInsets.all(16),
               child: Row(
@@ -45,7 +46,7 @@ class SimilarMoviesGrid extends StatelessWidget {
                             fontSize: 18),
                       ),
                       Text(
-                        similarMovies[index].movieTitle,
+                        '${similarMovies[index].movieRating}',
                         style: GoogleFonts.spaceMono(
                           color: Color.fromARGB(255, 75, 84, 99),
                         ),
