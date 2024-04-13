@@ -44,13 +44,15 @@ class SimilarMoviesGrid extends StatelessWidget {
                       Text(
                         '${similarMovies[index].releaseYear}',
                         style: GoogleFonts.spaceMono(
+                          fontSize: 18,
                           color: Color.fromARGB(255, 75, 84, 99),
                         ),
                       ),
                       Text(
                         '${similarMovies[index].movieRating}',
                         style: GoogleFonts.spaceMono(
-                          color: Color.fromARGB(255, 75, 84, 99),
+                          fontSize: 18,
+                          color: Colors.amber,
                         ),
                       ),
                     ],
