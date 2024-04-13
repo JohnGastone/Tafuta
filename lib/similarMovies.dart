@@ -1,11 +1,6 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: file_names
 
-// import 'package:dashboard/data/data.dart';
-// import 'package:dashboard/screens/kazi_zilizopita.dart';
-// import 'package:dashboard/widgets/zilizopitaTester.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:percent_indicator/percent_indicator.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tafuta/data/similarMoviesData.dart';
 
@@ -23,8 +18,8 @@ class SimilarMoviesGrid extends StatelessWidget {
         itemBuilder: (context, index) {
           return Container(
             decoration: BoxDecoration(
-                color: Color.fromARGB(135, 167, 161, 161),
-                border: Border(),
+                color: const Color.fromARGB(135, 167, 161, 161),
+                border: const Border(),
                 borderRadius: BorderRadius.circular(20)),
             child: Padding(
               padding: const EdgeInsets.all(16),
@@ -33,19 +28,18 @@ class SimilarMoviesGrid extends StatelessWidget {
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Text(
                         similarMovies[index].movieTitle,
                         style: GoogleFonts.spaceMono(
-                            color: Color.fromARGB(255, 75, 84, 99),
+                            color: const Color.fromARGB(255, 75, 84, 99),
                             fontSize: 18),
                       ),
                       Text(
                         '${similarMovies[index].releaseYear}',
                         style: GoogleFonts.spaceMono(
                           fontSize: 18,
-                          color: Color.fromARGB(255, 75, 84, 99),
+                          color: const Color.fromARGB(255, 75, 84, 99),
                         ),
                       ),
                       Text(
