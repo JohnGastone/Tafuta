@@ -260,9 +260,6 @@ class ItemPage extends StatelessWidget {
                               fontWeight: FontWeight.w400,
                               color: Colors.blueGrey),
                         ),
-                        // SizedBox(
-                        //   width: 10,
-                        // ),
                         Text(
                           '${movie.downloads}',
                           style: GoogleFonts.spaceMono(
@@ -284,9 +281,6 @@ class ItemPage extends StatelessWidget {
                               fontWeight: FontWeight.w400,
                               color: Colors.blueGrey),
                         ),
-                        // SizedBox(
-                        //   width: 10,
-                        // ),
                         Text(
                           '${movie.recommendations}',
                           style: GoogleFonts.spaceMono(
@@ -360,7 +354,6 @@ class ItemPage extends StatelessWidget {
               ),
             ),
           ),
-          // SimilarMoviesGrid()
         ],
       ),
     );
