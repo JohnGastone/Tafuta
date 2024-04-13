@@ -11,14 +11,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-            // visualDensity: VisualDensity.AdaptivePlatformDensity,
-            brightness: Brightness.dark),
+        theme: ThemeData(brightness: Brightness.dark),
         home: SearchPage());
   }
 }
