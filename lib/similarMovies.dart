@@ -23,7 +23,7 @@ class SimilarMoviesGrid extends StatelessWidget {
         itemBuilder: (context, index) {
           return Container(
             decoration: BoxDecoration(
-                color: Color.fromARGB(136, 218, 180, 180),
+                color: Color.fromARGB(135, 167, 161, 161),
                 border: Border(),
                 borderRadius: BorderRadius.circular(20)),
             child: Padding(
@@ -52,7 +52,7 @@ class SimilarMoviesGrid extends StatelessWidget {
                         '${similarMovies[index].movieRating}',
                         style: GoogleFonts.spaceMono(
                           fontSize: 18,
-                          color: Colors.amber,
+                          color: Colors.white,
                         ),
                       ),
                     ],

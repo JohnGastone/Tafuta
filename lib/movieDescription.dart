@@ -7,6 +7,7 @@ import 'package:tafuta/model/movie_model.dart';
 import 'package:flutter_social_button/flutter_social_button.dart';
 import 'package:flutter_animated_button/flutter_animated_button.dart';
 import 'package:tafuta/similarMovies.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ItemPage extends StatelessWidget {
   List<Color> clrs = [
@@ -20,8 +21,25 @@ class ItemPage extends StatelessWidget {
 
   ItemPage({Key? key, required this.movie}) : super(key: key);
 
+  void _launchURL(String url) async {
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    String encodedMovieTitle =
+        Uri.encodeComponent(movie.movieTitle ?? 'Default Movie Title');
+    String message =
+        Uri.encodeComponent("Check out this movie: ${movie.movieTitle}!");
+    String whatsappUrl = "https://wa.me/?text=$message";
+    String twitterUrl = "https://twitter.com/intent/tweet?text=$message";
+    String facebookUrl =
+        "https://www.facebook.com/sharer/sharer.php?u=http://example.com/movies/$encodedMovieTitle";
+
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 221, 219, 224),
       body: ListView(
@@ -296,17 +314,23 @@ class ItemPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       FlutterSocialButton(
-                        onTap: () {},
+                        onTap: () {
+                          _launchURL(whatsappUrl);
+                        },
                         buttonType: ButtonType.whatsapp,
                         mini: true,
                       ),
                       FlutterSocialButton(
-                        onTap: () {},
+                        onTap: () {
+                          _launchURL(twitterUrl);
+                        },
                         buttonType: ButtonType.twitter,
                         mini: true,
                       ),
                       FlutterSocialButton(
-                        onTap: () {},
+                        onTap: () {
+                          _launchURL(facebookUrl);
+                        },
                         buttonType: ButtonType.facebook,
                         mini: true,
                       ),
