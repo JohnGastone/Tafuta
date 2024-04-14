@@ -44,16 +44,17 @@ class _SearchPageState extends State<SearchPage> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Center(
-                  child: Text(
-                    'Horizontal grid of Top  Rated Movies to be placed here',
-                    style: GoogleFonts.spaceMono(
-                      fontSize: 20,
+                Row(
+                  children: [
+                    Icon(
+                      Icons.star_rate,
+                      color: Colors.amber,
                     ),
-                  ),
+                    Text('')
+                  ],
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 150,
                 ),
                 Text(
                   'Search for your favorite Movie',
