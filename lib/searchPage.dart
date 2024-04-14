@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_is_empty, duplicate_ignore, prefer_const_literals_to_create_immutables
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tafuta/movieDescription.dart';
 import 'package:tafuta/model/movie_model.dart';
