@@ -79,11 +79,11 @@ class _SearchPageState extends State<SearchPage> {
                           borderSide: BorderSide.none,
                         ),
                         hintText: "Eg: Kijiji cha Tambua Haki",
-                        hintStyle: GoogleFonts.spaceMono(),
+                        hintStyle: GoogleFonts.spaceMono(color: Colors.white),
                         suffixIcon: Icon(
                           Icons.search,
                         ),
-                        suffixIconColor: Color.fromARGB(255, 46, 204, 209))),
+                        suffixIconColor: Colors.white)),
                 SizedBox(
                   height: 15,
                 ),
