@@ -57,41 +57,45 @@ class _SearchPageState extends State<SearchPage> {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 10,
-                ),
                 Expanded(
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: displayList
                         .length, // Specify the number of items in the list
                     itemBuilder: (context, index) {
-                      return Container(
-                        // height: 50, // Set a fixed height for each item
-                        // width: 80,
-                        decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 141, 205, 174),
-                          shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.all(Radius.circular(12)),
-                        ),
-                        // Add your item content here, for example:
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Text(
-                              displayList[index].movieTitle!,
-                              style: GoogleFonts.spaceMono(
-                                  fontSize: 20,
-                                  color: Color.fromARGB(255, 195, 205, 211)),
+                      return Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            height: 150, // Set a fixed height for each item
+                            width: 160,
+                            margin: EdgeInsets.only(
+                                left: index == 0 ? 16 : 8,
+                                right: 8), // Add space between items
+                            decoration: BoxDecoration(
+                              color: Color.fromARGB(255, 134, 138, 136),
+                              shape: BoxShape.rectangle,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(12)),
                             ),
-                          ],
-                        ),
+                            // Add your item content here, for example:
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Text(
+                                  displayList[index].movieTitle!,
+                                  style: GoogleFonts.spaceMono(
+                                      fontSize: 16,
+                                      color:
+                                          Color.fromARGB(255, 195, 205, 211)),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       );
                     },
                   ),
-                ),
-                SizedBox(
-                  height: 10,
                 ),
                 Text(
                   'Search for your favorite Movie',
