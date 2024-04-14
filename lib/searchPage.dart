@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_is_empty, duplicate_ignore, prefer_const_literals_to_create_immutables
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tafuta/movieDescription.dart';
 import 'package:tafuta/model/movie_model.dart';
@@ -59,13 +60,34 @@ class _SearchPageState extends State<SearchPage> {
                 SizedBox(
                   height: 10,
                 ),
-                SizedBox(
-                  height: 150,
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 141, 205, 174),
-                        shape: BoxShape.rectangle,
-                        borderRadius: BorderRadius.all(Radius.circular(12))),
+                Expanded(
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: displayList
+                        .length, // Specify the number of items in the list
+                    itemBuilder: (context, index) {
+                      return Container(
+                        // height: 50, // Set a fixed height for each item
+                        // width: 80,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 141, 205, 174),
+                          shape: BoxShape.rectangle,
+                          borderRadius: BorderRadius.all(Radius.circular(12)),
+                        ),
+                        // Add your item content here, for example:
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Text(
+                              displayList[index].movieTitle!,
+                              style: GoogleFonts.spaceMono(
+                                  fontSize: 20,
+                                  color: Color.fromARGB(255, 195, 205, 211)),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
                   ),
                 ),
                 SizedBox(
