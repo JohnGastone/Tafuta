@@ -85,15 +85,15 @@ class _SearchPageState extends State<SearchPage> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text(
-                                  displayList[index].movieTitle!,
-                                  style: GoogleFonts.spaceMono(
-                                      fontSize: 16,
-                                      color:
-                                          Color.fromARGB(255, 195, 205, 211)),
-                                ),
-                                Text('${displayList[index].rating!}',
-                                    style: GoogleFonts.spaceMono())
+                                // Text(
+                                //   displayList[index].movieTitle!,
+                                //   style: GoogleFonts.spaceMono(
+                                //       fontSize: 16,
+                                //       color:
+                                //           Color.fromARGB(255, 195, 205, 211)),
+                                // ),
+                                // Text('${displayList[index].rating!}',
+                                //     style: GoogleFonts.spaceMono())
                               ],
                             ),
                           ),
