@@ -11,4 +11,6 @@ Here are the App screenshots from its screens/pages.
 
 
 <img src="Home.png" width="250">
+<img src="MovieDescription.png" width="250">
+
 
