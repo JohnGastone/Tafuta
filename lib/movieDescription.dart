@@ -295,7 +295,7 @@ class ItemPage extends StatelessWidget {
                     height: 5,
                   ),
                   Center(
-                    child: Text("Share To a Friend",
+                    child: Text("Recommend To a Friend",
                         style: GoogleFonts.spaceMono(
                             fontSize: 20,
                             fontWeight: FontWeight.w300,
