@@ -50,11 +50,17 @@ class _SearchPageState extends State<SearchPage> {
                       Icons.star_rate,
                       color: Colors.amber,
                     ),
-                    Text('')
+                    Text(
+                      'Top Rated Movies',
+                      style: GoogleFonts.spaceMono(fontSize: 18),
+                    )
                   ],
                 ),
                 SizedBox(
                   height: 150,
+                  child: Container(
+                    decoration: BoxDecoration(),
+                  ),
                 ),
                 Text(
                   'Search for your favorite Movie',
