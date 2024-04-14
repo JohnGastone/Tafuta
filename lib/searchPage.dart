@@ -53,8 +53,11 @@ class _SearchPageState extends State<SearchPage> {
                     Text(
                       'Top Rated Movies',
                       style: GoogleFonts.spaceMono(fontSize: 18),
-                    )
+                    ),
                   ],
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 SizedBox(
                   height: 150,
@@ -64,6 +67,9 @@ class _SearchPageState extends State<SearchPage> {
                         shape: BoxShape.rectangle,
                         borderRadius: BorderRadius.all(Radius.circular(12))),
                   ),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Text(
                   'Search for your favorite Movie',
