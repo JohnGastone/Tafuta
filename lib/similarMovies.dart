@@ -51,7 +51,8 @@ class SimilarMoviesGrid extends StatelessWidget {
                       ),
                       Text(
                         similarMovies[index].genre,
-                        style: GoogleFonts.spaceMono(),
+                        style: GoogleFonts.spaceMono(
+                            fontSize: 18, color: Colors.white),
                       )
                     ],
                   ),
