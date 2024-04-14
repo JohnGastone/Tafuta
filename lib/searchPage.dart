@@ -59,7 +59,10 @@ class _SearchPageState extends State<SearchPage> {
                 SizedBox(
                   height: 150,
                   child: Container(
-                    decoration: BoxDecoration(),
+                    decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 141, 205, 174),
+                        shape: BoxShape.rectangle,
+                        borderRadius: BorderRadius.all(Radius.circular(12))),
                   ),
                 ),
                 Text(
