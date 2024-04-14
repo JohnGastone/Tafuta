@@ -73,6 +73,9 @@ class _SearchPageState extends State<SearchPage> {
                                 left: index == 0 ? 16 : 8,
                                 right: 8), // Add space between items
                             decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      displayList[index].posterImage!)),
                               color: Color.fromARGB(255, 134, 138, 136),
                               shape: BoxShape.rectangle,
                               borderRadius:
@@ -89,6 +92,8 @@ class _SearchPageState extends State<SearchPage> {
                                       color:
                                           Color.fromARGB(255, 195, 205, 211)),
                                 ),
+                                Text('${displayList[index].rating!}',
+                                    style: GoogleFonts.spaceMono())
                               ],
                             ),
                           ),
