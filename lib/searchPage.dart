@@ -152,9 +152,16 @@ class _SearchPageState extends State<SearchPage> {
                                     trailing: Text(
                                         '${displayList[index].rating!}',
                                         style: GoogleFonts.spaceMono(
-                                            color: Colors.amber)),
+                                            color: Colors.amber, fontSize: 15)),
                                   ),
-                                ))))
+                                )))),
+                SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  'All rights reserved @Shimoni',
+                  style: GoogleFonts.spaceMono(fontSize: 18),
+                )
               ])),
     );
   }
