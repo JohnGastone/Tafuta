@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_is_empty, duplicate_ignore, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_is_empty, duplicate_ignore, prefer_const_literals_to_create_immutables, file_names
 
 import 'package:flutter/material.dart';
 import 'package:tafuta/movieDescription.dart';
@@ -57,40 +57,47 @@ class _SearchPageState extends State<SearchPage> {
                   ],
                 ),
                 Expanded(
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: displayList
-                        .length, // Specify the number of items in the list
-                    itemBuilder: (context, index) {
-                      return Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            height: 150, // Set a fixed height for each item
-                            width: 160,
-                            margin: EdgeInsets.only(
-                                left: index == 0 ? 16 : 8,
-                                right: 8), // Add space between items
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                  image: AssetImage(
-                                      displayList[index].posterImage!)),
-                              color: Color.fromARGB(255, 134, 138, 136),
-                              shape: BoxShape.rectangle,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(12)),
-                            ),
-                            // Add your item content here, for example:
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [],
-                            ),
-                          ),
-                        ],
+                    child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: displayList
+                      .length, // Specify the number of items in the list
+                  itemBuilder: (context, index) => InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              ItemPage(movie: displayList[index]),
+                        ),
                       );
                     },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 150, // Set a fixed height for each item
+                          width: 160,
+                          margin: EdgeInsets.only(
+                              left: index == 0 ? 16 : 8,
+                              right: 8), // Add space between items
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(
+                                    displayList[index].posterImage!)),
+                            color: Color.fromARGB(255, 134, 138, 136),
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.all(Radius.circular(12)),
+                          ),
+                          // Add your item content here, for example:
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
+                )),
                 Text(
                   'Search for your favorite Movie',
                   style: GoogleFonts.spaceMono(
