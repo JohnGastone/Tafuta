@@ -54,7 +54,7 @@ class ItemPage extends StatelessWidget {
               selectedTextColor: Colors.black,
               transitionType: TransitionType.BOTTOM_TO_TOP,
               borderRadius: 15,
-              textStyle: GoogleFonts.spaceMono(
+              textStyle: GoogleFonts.spaceGrotesk(
                   fontSize: 20,
                   letterSpacing: 5,
                   color: Color.fromARGB(255, 100, 90, 86),
@@ -80,7 +80,7 @@ class ItemPage extends StatelessWidget {
               padding: EdgeInsets.zero,
               child: Text(
                 '${movie.movieTitle}',
-                style: GoogleFonts.spaceMono(
+                style: GoogleFonts.spaceGrotesk(
                     color: Colors.blueGrey,
                     fontSize: 35,
                     fontWeight: FontWeight.w200),
@@ -107,21 +107,21 @@ class ItemPage extends StatelessWidget {
                       children: [
                         Text(
                           'Genre',
-                          style: GoogleFonts.spaceMono(
+                          style: GoogleFonts.spaceGrotesk(
                               color: Colors.blueGrey,
                               fontSize: 15,
                               fontWeight: FontWeight.w200),
                         ),
                         Text(
                           'Release Year',
-                          style: GoogleFonts.spaceMono(
+                          style: GoogleFonts.spaceGrotesk(
                               color: Colors.blueGrey,
                               fontSize: 15,
                               fontWeight: FontWeight.w200),
                         ),
                         Text(
                           'Duration',
-                          style: GoogleFonts.spaceMono(
+                          style: GoogleFonts.spaceGrotesk(
                               color: Colors.blueGrey,
                               fontSize: 15,
                               fontWeight: FontWeight.w200),
@@ -135,17 +135,17 @@ class ItemPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text('${movie.genre}',
-                              style: GoogleFonts.spaceMono(
+                              style: GoogleFonts.spaceGrotesk(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w800,
                                   color: Colors.blueGrey)),
                           Text('${movie.releaseYear}',
-                              style: GoogleFonts.spaceMono(
+                              style: GoogleFonts.spaceGrotesk(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w800,
                                   color: Colors.blueGrey)),
                           Text('${movie.runtime}',
-                              style: GoogleFonts.spaceMono(
+                              style: GoogleFonts.spaceGrotesk(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w800,
                                   color: Colors.blueGrey)),
@@ -158,14 +158,14 @@ class ItemPage extends StatelessWidget {
                       children: [
                         Text(
                           'Rate the movie',
-                          style: GoogleFonts.spaceMono(
+                          style: GoogleFonts.spaceGrotesk(
                               color: Colors.blueGrey,
                               fontSize: 15,
                               fontWeight: FontWeight.w200),
                         ),
                         Text(
                           'Leave a heart',
-                          style: GoogleFonts.spaceMono(
+                          style: GoogleFonts.spaceGrotesk(
                               color: Colors.blueGrey,
                               fontSize: 15,
                               fontWeight: FontWeight.w200),
@@ -212,7 +212,7 @@ class ItemPage extends StatelessWidget {
                                 margin: EdgeInsets.symmetric(horizontal: 10),
                                 child: Text(
                                   '01',
-                                  style: GoogleFonts.spaceMono(
+                                  style: GoogleFonts.spaceGrotesk(
                                       fontSize: 13,
                                       fontWeight: FontWeight.w600,
                                       color: Colors.purpleAccent),
@@ -242,7 +242,7 @@ class ItemPage extends StatelessWidget {
                     child: Text(
                       '${movie.description}',
                       textAlign: TextAlign.justify,
-                      style: GoogleFonts.spaceMono(
+                      style: GoogleFonts.spaceGrotesk(
                         fontSize: 18,
                         fontWeight: FontWeight.w300,
                         color: Colors.blueGrey,
@@ -255,14 +255,14 @@ class ItemPage extends StatelessWidget {
                       children: [
                         Text(
                           'Number of Downloads: ',
-                          style: GoogleFonts.spaceMono(
+                          style: GoogleFonts.spaceGrotesk(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                               color: Colors.blueGrey),
                         ),
                         Text(
                           '${movie.downloads}',
-                          style: GoogleFonts.spaceMono(
+                          style: GoogleFonts.spaceGrotesk(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                               color: Colors.purpleAccent),
@@ -276,14 +276,14 @@ class ItemPage extends StatelessWidget {
                       children: [
                         Text(
                           'Number of Recommendations: ',
-                          style: GoogleFonts.spaceMono(
+                          style: GoogleFonts.spaceGrotesk(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                               color: Colors.blueGrey),
                         ),
                         Text(
                           '${movie.recommendations}',
-                          style: GoogleFonts.spaceMono(
+                          style: GoogleFonts.spaceGrotesk(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
                               color: Colors.purpleAccent),
@@ -296,7 +296,7 @@ class ItemPage extends StatelessWidget {
                   ),
                   Center(
                     child: Text("Recommend To a Friend",
-                        style: GoogleFonts.spaceMono(
+                        style: GoogleFonts.spaceGrotesk(
                             fontSize: 20,
                             fontWeight: FontWeight.w300,
                             color: Colors.black)),
@@ -338,7 +338,7 @@ class ItemPage extends StatelessWidget {
                   ),
                   Center(
                     child: Text("Similar Movies",
-                        style: GoogleFonts.spaceMono(
+                        style: GoogleFonts.spaceGrotesk(
                             fontSize: 20,
                             fontWeight: FontWeight.w300,
                             color: Colors.black)),
