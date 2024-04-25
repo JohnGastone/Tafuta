@@ -98,12 +98,21 @@ class _SearchPageState extends State<SearchPage> {
                     ),
                   ),
                 )),
-                Text(
-                  'Find your favorite Movie',
-                  style: GoogleFonts.spaceGrotesk(
-                      fontSize: 19,
-                      fontWeight: FontWeight.w300,
-                      color: Colors.white),
+                Row(
+                  children: [
+                    Text(
+                      'Find your favorite Movie',
+                      style: GoogleFonts.spaceGrotesk(
+                          fontSize: 19,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white),
+                    ),
+                    Image.asset(
+                      'images/chini.jpg',
+                      height: 35,
+                      width: 35,
+                    )
+                  ],
                 ),
                 SizedBox(
                   height: 20,
