@@ -215,7 +215,7 @@ class _SearchPageState extends State<SearchPage> {
                 ),
                 Text(
                   'All rights reserved @Shimoni',
-                  style: GoogleFonts.spaceGrotesk(fontSize: 18),
+                  style: GoogleFonts.spaceGrotesk(fontSize: 20),
                 )
               ])),
     );
