@@ -355,6 +355,9 @@ class ItemPage extends StatelessWidget {
                     style: GoogleFonts.spaceGrotesk(
                         color: Colors.amberAccent, fontSize: 20),
                   ),
+                  SizedBox(
+                    height: 20,
+                  )
                 ],
               ),
             ),
