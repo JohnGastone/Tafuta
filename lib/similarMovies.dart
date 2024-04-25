@@ -31,27 +31,27 @@ class SimilarMoviesGrid extends StatelessWidget {
                     children: [
                       Text(
                         similarMovies[index].movieTitle,
-                        style: GoogleFonts.spaceMono(
+                        style: GoogleFonts.spaceGrotesk(
                             color: const Color.fromARGB(255, 75, 84, 99),
                             fontSize: 18),
                       ),
                       Text(
                         '${similarMovies[index].releaseYear}',
-                        style: GoogleFonts.spaceMono(
+                        style: GoogleFonts.spaceGrotesk(
                           fontSize: 18,
                           color: const Color.fromARGB(255, 75, 84, 99),
                         ),
                       ),
                       Text(
                         '${similarMovies[index].movieRating}',
-                        style: GoogleFonts.spaceMono(
+                        style: GoogleFonts.spaceGrotesk(
                           fontSize: 18,
                           color: Colors.white,
                         ),
                       ),
                       Text(
                         similarMovies[index].genre,
-                        style: GoogleFonts.spaceMono(
+                        style: GoogleFonts.spaceGrotesk(
                             fontSize: 18, color: Colors.white),
                       )
                     ],
