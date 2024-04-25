@@ -35,7 +35,7 @@ class ItemPage extends StatelessWidget {
         Uri.encodeComponent(movie.movieTitle ?? 'Default Movie Title');
     String message =
         Uri.encodeComponent("Check out this movie: ${movie.movieTitle}!");
-    String whatsappUrl = "https://wa.me/?text=$message";
+    String whatsappUrl = "https://wa.me/?text=${movie.movieTitle}";
     String twitterUrl = "https://twitter.com/intent/tweet?text=$message";
     String facebookUrl =
         "https://www.facebook.com/sharer/sharer.php?u=http://example.com/movies/$encodedMovieTitle";
