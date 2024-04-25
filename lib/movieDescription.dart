@@ -349,7 +349,12 @@ class ItemPage extends StatelessWidget {
                   SimilarMoviesGrid(),
                   SizedBox(
                     height: 50,
-                  )
+                  ),
+                  Text(
+                    "All rights reserved @Shimoni",
+                    style: GoogleFonts.spaceGrotesk(
+                        color: Colors.amberAccent, fontSize: 20),
+                  ),
                 ],
               ),
             ),
