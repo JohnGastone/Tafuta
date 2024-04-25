@@ -99,7 +99,7 @@ class _SearchPageState extends State<SearchPage> {
                   ),
                 )),
                 Text(
-                  'Search for your favorite Movie',
+                  'Find your favorite Movie',
                   style: GoogleFonts.spaceGrotesk(
                       fontSize: 19,
                       fontWeight: FontWeight.w300,
