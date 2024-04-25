@@ -141,14 +141,14 @@ class _SearchPageState extends State<SearchPage> {
                         style: GoogleFonts.spaceGrotesk(
                             color: Color.fromARGB(255, 255, 255, 255),
                             fontSize: 20,
-                            fontWeight: FontWeight.w200),
+                            fontWeight: FontWeight.bold),
                       ),
                       Text(
                         'Rating',
                         style: GoogleFonts.spaceGrotesk(
                             color: Color.fromARGB(255, 255, 255, 255),
                             fontSize: 20,
-                            fontWeight: FontWeight.w200),
+                            fontWeight: FontWeight.bold),
                       )
                     ],
                   ),
