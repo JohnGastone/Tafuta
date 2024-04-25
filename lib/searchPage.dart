@@ -98,21 +98,24 @@ class _SearchPageState extends State<SearchPage> {
                     ),
                   ),
                 )),
-                Row(
-                  children: [
-                    Text(
-                      'Find your favorite Movie',
-                      style: GoogleFonts.spaceGrotesk(
-                          fontSize: 19,
-                          fontWeight: FontWeight.w300,
-                          color: Colors.white),
-                    ),
-                    Image.asset(
-                      'images/chini.png',
-                      height: 35,
-                      width: 35,
-                    )
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 20),
+                  child: Row(
+                    children: [
+                      Text(
+                        'Find your favorite Movie',
+                        style: GoogleFonts.spaceGrotesk(
+                            fontSize: 19,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.white),
+                      ),
+                      Image.asset(
+                        'images/chini.png',
+                        height: 35,
+                        width: 35,
+                      )
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 20,
