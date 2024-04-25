@@ -108,7 +108,7 @@ class _SearchPageState extends State<SearchPage> {
                           color: Colors.white),
                     ),
                     Image.asset(
-                      'images/chini.jpg',
+                      'images/chini.png',
                       height: 35,
                       width: 35,
                     )
