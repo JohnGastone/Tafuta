@@ -353,7 +353,7 @@ class ItemPage extends StatelessWidget {
                   Text(
                     "All rights reserved @Shimoni",
                     style: GoogleFonts.spaceGrotesk(
-                        color: Colors.amberAccent, fontSize: 20),
+                        color: Colors.black, fontSize: 20),
                   ),
                   SizedBox(
                     height: 20,
